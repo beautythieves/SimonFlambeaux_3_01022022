@@ -1,1 +1,55 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@charset "UTF-8";
+.header__logo {
+  height: 30px;
+  padding: 15px;
+}
+
+.header__localisation {
+  background-color: #e7e3e3;
+  padding: 10px 0 10px 0;
+}
+
+.header__logo, .header__localisation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header__slogan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__reservez, .main__titre, .section__titre {
+  /*xiste-t-il une règle exception (pour tout le reste du html? chgt police*/
+  font-family: 'Shirkhand';
+  height: 100%;
+  background-color: #00ff15;
+}
+
+.header__reservez {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.header__explorer {
+  font-size: 20px;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  white-space: nowrap;
+  border-radius: 40px;
+  padding: 15px 20px;
+}
+/*# sourceMappingURL=style.css.map */

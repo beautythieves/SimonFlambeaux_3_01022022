@@ -1,5 +1,40 @@
-html{
-    font-family: 'Shirkhand', sans-serif;
-    height: 100%;
-    background-color: aqua;
+.header__logo{
+    height:30px;
+    padding:15px;
 }
+
+.header__localisation{
+    background-color: rgb(231, 227, 227);
+    padding:10px 0 10px 0;
+}
+.header__logo, .header__localisation  {
+display:flex;
+justify-content:center;
+}
+.header__slogan{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+}
+
+.header__reservez,  .main__titre, .section__titre{/*xiste-t-il une règle exception (pour tout le reste du html? chgt police*/
+    font-family: 'Shirkhand';
+    height: 100%;
+    background-color: rgb(0, 255, 21);
+}
+
+.header__reservez{
+    font-size:28px;
+    font-weight:700;
+}
+
+.header__explorer{
+    font-size:20px;
+    width:min-content;
+    white-space:nowrap;
+    border-radius: 40px;
+    padding: 15px 20px;
+
+
+}
+
