@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CAAA;EACA,WAAW,EAAE,uBAAuB;EACpC,MAAM,EAAE,IAAI;EACZ,gBAAgB,EAAE,IAAI;CACzB",
+    "sources": [
+        "smartphone.scss"
+    ],
+    "names": [],
+    "file": "smartphone.css"
+}
