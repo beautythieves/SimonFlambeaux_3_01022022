@@ -12,9 +12,8 @@ display:flex;
 justify-content:center;
 }
 .header__slogan{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
+    background-color:rgb(241, 237, 237);
+    padding:25px 0 55px 0;
 }
 
 .header__reservez,  .main__titre, .section__titre{/*xiste-t-il une règle exception (pour tout le reste du html? chgt police*/
@@ -28,13 +27,38 @@ justify-content:center;
     font-weight:700;
 }
 
+.header__decouvrez{
+    font-size:26px;
+    font-weight:500;
+}
 .header__explorer{
     font-size:20px;
     width:min-content;
     white-space:nowrap;
     border-radius: 40px;
     padding: 15px 20px;
-
-
 }
 
+.main, .header__slogan{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    
+}
+.main__choisissez, .main__main__composez, .main__degustez{
+    display:flex;
+    justify-content:center;/*a modifier ici ne fonctionne pas (cf html*/
+}
+
+.section{
+    display:flex;
+    flex-direction:column;
+        .section__titre{
+            font-size:24px;
+        }
+}
+
+.section__palette{
+    width:100%;
+        .section__palette__lien
+}

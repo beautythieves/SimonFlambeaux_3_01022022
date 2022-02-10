@@ -19,16 +19,8 @@
 }
 
 .header__slogan {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  background-color: #f1eded;
+  padding: 25px 0 55px 0;
 }
 
 .header__reservez, .main__titre, .section__titre {
@@ -43,6 +35,11 @@
   font-weight: 700;
 }
 
+.header__decouvrez {
+  font-size: 26px;
+  font-weight: 500;
+}
+
 .header__explorer {
   font-size: 20px;
   width: -webkit-min-content;
@@ -51,5 +48,46 @@
   white-space: nowrap;
   border-radius: 40px;
   padding: 15px 20px;
+}
+
+.main, .header__slogan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__choisissez, .main__main__composez, .main__degustez {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /*a modifier ici ne fonctionne pas (cf html*/
+}
+
+.section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section .section__titre {
+  font-size: 24px;
+}
+
+.section__palette {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */

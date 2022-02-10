@@ -5,6 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         <link rel="stylesheet" href="normalize.css" />
         <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
         <title>ohmyfood</title>
         <script src="https://kit.fontawesome.com/a1a68e24d9.js" crossorigin="anonymous"></script>
     </head>
@@ -20,31 +23,31 @@
                 </form>
             </div>
             <div class="header__slogan">
-                <p class="header__reservez">Réservez le menu qui vous convient</p>
-                <p class="header__decouvrez">Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
-                <button class="header__explorer">Explorez nos restaurants</button>
+                <div class="header__reservez"><p>Réservez le menu qui vous convient</p></div>
+                <div class="header__decouvrez"><p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p></div>
+                <div class="header__explorez"><button>Explorez nos restaurants</button></div>
             </div>
         </header>
         
-        <article>
-            
-        </article>
-
-        <main>
-            <div class="main__titre">
-                <h1>Fonctionnement</h1>
-            </div>
+            <h1 class="fonctionnement">Fonctionnement</h1>
+        <main class="main">
             <div class=main__choisissez>
-                <button>Choisissez un restaurant</button>
+                1 <button><span class="material-icons">
+                    phone_iphone
+                    </span>Choisissez un restaurant</button>
             </div>
             <div class="main__composez">
-                <button>Composez votre menu</button>
+                2<button><span class="material-icons">
+                    list
+                    </span>Composez votre menu</button>
             </div>
             <div class="main__degustez">
-                <button>Dégustez au restaurant</button>
+                3<button><span class="material-icons">
+                    storefront
+                    </span>Dégustez au restaurant</button>
             </div>
         </main>
-        <section>
+        <section class="section">
             <div class="section__titre">Restaurants</div>
             <div class="section__palette">
                 <a class="section__palette__lien" href="#">   
@@ -56,6 +59,7 @@
                             <i class="far fa-heart"></i>
                             </div>
                     </div>
+                </a>
             </div>
             <div class="section__note">
                 <a class="section__note__lien" href="#">   
@@ -67,6 +71,7 @@
                             <i class="far fa-heart"></i>
                             </div>
                     </div>
+                </a>
             </div>
             <div class="section__french">
                 <a class="section__french__lien" href="#">   
@@ -78,6 +83,7 @@
                             <i class="far fa-heart"></i>
                             </div>
                     </div>
+                </a>
             </div>
             
             <div class="section__delice">
@@ -90,6 +96,7 @@
                             <i class="far fa-heart"></i>
                             </div>
                     </div>
+                </a>
             </div>
         </section>
 
