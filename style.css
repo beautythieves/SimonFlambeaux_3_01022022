@@ -87,7 +87,35 @@
   font-size: 24px;
 }
 
-.section__palette {
+.section__palette, .section__note, .section__french, .section__delice {
+  border: 1px solid red;
+  margin: 20px;
+  border-radius: 25px;
+}
+
+.section__palette__lien__carte__img, .section__note__lien__carte__img, .section__french__lien__carte__img, .section__delice__lien__carte__img {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 300px;
+  border-radius: 25px 25px 0 0;
+}
+
+.section__palette__lien__carte__nouveau, .section__note__lien__carte__nouveau {
+  position: relative;
+  /*a voir avec julien text deco qui ne marche pas*/
+  bottom: 250px;
+  left: 400px;
+  text-decoration: none;
+  outline: none;
+  color: green;
+  background-color: #11da2c;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.section__palette__lien__carte_intitule {
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
