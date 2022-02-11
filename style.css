@@ -1,4 +1,15 @@
 @charset "UTF-8";
+.body {
+  font-family: 'roboto';
+}
+
+.header__reservez, .main__titre, .section__titre {
+  /*xiste-t-il une règle exception (pour tout le reste du html? chgt police*/
+  font-family: 'Shirkhand' !important;
+  height: 100%;
+  background-color: #4338a5;
+}
+
 .header__logo {
   height: 30px;
   padding: 15px;
@@ -21,13 +32,6 @@
 .header__slogan {
   background-color: #f1eded;
   padding: 25px 0 55px 0;
-}
-
-.header__reservez, .main__titre, .section__titre {
-  /*xiste-t-il une règle exception (pour tout le reste du html? chgt police*/
-  font-family: 'Shirkhand';
-  height: 100%;
-  background-color: #00ff15;
 }
 
 .header__reservez {
@@ -93,6 +97,16 @@
   border-radius: 25px;
 }
 
+.section__palette__lien, .section__note__lien, .section__french__lien, .section__delice__lien {
+  /*cela ne amrche pas*/
+  text-decoration: none;
+}
+
+.section__palette__lien__carte, .section__note__lien__carte, .section__french__lien__carte, .section__delice__lien__carte {
+  position: relative;
+  /*marche pas help!*/
+}
+
 .section__palette__lien__carte__img, .section__note__lien__carte__img, .section__french__lien__carte__img, .section__delice__lien__carte__img {
   width: 100%;
   -o-object-fit: cover;
@@ -102,7 +116,7 @@
 }
 
 .section__palette__lien__carte__nouveau, .section__note__lien__carte__nouveau {
-  position: relative;
+  position: absolute;
   /*a voir avec julien text deco qui ne marche pas*/
   bottom: 250px;
   left: 400px;
@@ -115,7 +129,51 @@
   font-size: 20px;
 }
 
-.section__palette__lien__carte_intitule {
+.section__palette__lien__carte__intitule__titre, .section__note__lien__carte__intitule__titre, .section__french__lien__carte__intitule__titre, .section__delice__lien__carte__intitule__titre {
   text-decoration: none;
+  font-size: 26px;
+  font-weight: 600;
+  color: black;
+  margin: 0 0 0 20px;
+}
+
+.section__palette__lien__carte__intitule__lieu, .section__note__lien__carte__intitule__lieu, .section__french__lien__carte__intitule__lieu, .section__delice__lien__carte__intitule__lieu {
+  font-size: 24px;
+  margin: 10px 0 16px 20px;
+}
+
+.fa-heart {
+  position: relative;
+  bottom: 50px;
+  left: 450px;
+  font-size: 35px;
+  color: black;
+  font-weight: 300;
+}
+
+.footer {
+  background-color: #723434;
+  padding: 20px 0 30px 20px;
+  color: white;
+}
+
+.footer .footer__logo__img {
+  height: 25px;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.footer__proposer, .footer__devenir, .footer__mentions, .footer__contact {
+  margin: 10px;
+}
+
+.fa-utensils {
+  padding-right: 10px;
+}
+
+.fa-hands-helping {
+  -webkit-transform: rotate(345deg);
+          transform: rotate(345deg);
+  font-size: 15px;
 }
 /*# sourceMappingURL=style.css.map */

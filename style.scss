@@ -1,3 +1,13 @@
+.body{
+    font-family:'roboto';
+}
+
+.header__reservez,  .main__titre, .section__titre{/*xiste-t-il une règle exception (pour tout le reste du html? chgt police*/
+    font-family: 'Shirkhand' !important;
+    height: 100%;
+    background-color: rgb(67, 56, 165);
+}
+
 .header__logo{
     height:30px;
     padding:15px;
@@ -7,20 +17,18 @@
     background-color: rgb(231, 227, 227);
     padding:10px 0 10px 0;
 }
+
 .header__logo, .header__localisation  {
 display:flex;
 justify-content:center;
 }
+
 .header__slogan{
     background-color:rgb(241, 237, 237);
     padding:25px 0 55px 0;
 }
 
-.header__reservez,  .main__titre, .section__titre{/*xiste-t-il une règle exception (pour tout le reste du html? chgt police*/
-    font-family: 'Shirkhand';
-    height: 100%;
-    background-color: rgb(0, 255, 21);
-}
+
 
 .header__reservez{
     font-size:28px;
@@ -64,21 +72,29 @@ justify-content:center;
     border: 1px solid red;
     margin:20px;
     border-radius:25px;
+    
+   
 }
 
-.section__palette_lien__carte{
-    
+.section__palette__lien, .section__note__lien, .section__french__lien, .section__delice__lien{/*cela ne amrche pas*/
+    text-decoration:none;
+        
 }
+
+.section__palette__lien__carte, .section__note__lien__carte, .section__french__lien__carte, .section__delice__lien__carte{
+        position:relative;/*marche pas help!*/
+    }
 
 .section__palette__lien__carte__img, .section__note__lien__carte__img, .section__french__lien__carte__img, .section__delice__lien__carte__img{
     width:100%;
     object-fit:cover;
     height:300px;
     border-radius:25px 25px 0 0;
-    }
+}
+
 
 .section__palette__lien__carte__nouveau, .section__note__lien__carte__nouveau{
-    position:relative;/*a voir avec julien text deco qui ne marche pas*/
+    position:absolute;/*a voir avec julien text deco qui ne marche pas*/
     bottom:250px;
     left:400px;
     text-decoration:none;
@@ -89,6 +105,51 @@ justify-content:center;
     border-radius:5px;
     font-size:20px;
 }
-.section__palette__lien__carte_intitule{
+
+.section__palette__lien__carte__intitule__titre, .section__note__lien__carte__intitule__titre, .section__french__lien__carte__intitule__titre, .section__delice__lien__carte__intitule__titre{
     text-decoration:none;
+    font-size:26px;
+    font-weight:600;
+    color:black;
+    margin:0 0 0 20px;
+}
+
+.section__palette__lien__carte__intitule__lieu, .section__note__lien__carte__intitule__lieu, .section__french__lien__carte__intitule__lieu, .section__delice__lien__carte__intitule__lieu{
+    font-size:24px;
+    margin: 10px 0 16px 20px;
+}
+
+
+.fa-heart{
+    position:relative;
+    bottom:50px;
+    left:450px;
+    font-size:35px;
+    color:black;
+    font-weight:300;
+}
+
+.footer{
+    background-color:rgb(114, 52, 52) ;
+    padding:20px 0 30px 20px;
+    color:white;
+   
+        .footer__logo__img{
+            height:25px;
+            filter: invert(1);
+        }
+}
+
+.footer__proposer, .footer__devenir, .footer__mentions,.footer__contact{
+    margin:10px;
+   
+}
+
+.fa-utensils{
+    padding-right:10px;
+}
+
+.fa-hands-helping{
+    transform: rotate(345deg);
+    font-size:15px;
 }
