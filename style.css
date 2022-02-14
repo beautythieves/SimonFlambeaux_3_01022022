@@ -84,13 +84,20 @@
 }
 
 .main__choisissez, .main__main__composez, .main__degustez {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  /*a modifier ici ne fonctionne pas (cf html*/
+  margin: 30px 30px;
+}
+
+.main__button {
+  padding: 30px 70px;
+  border-radius: 40px;
+}
+
+.main__button .main__icon {
+  padding-right: 30px;
+}
+
+.main__text {
+  margin-bottom: 20px;
 }
 
 .section {
@@ -111,15 +118,16 @@
   border: 1px solid red;
   margin: 20px;
   border-radius: 25px;
+  position: relative;
 }
 
 .section__palette__lien, .section__note__lien, .section__french__lien, .section__delice__lien {
   /*cela ne amrche pas*/
   text-decoration: none;
+  position: relative;
 }
 
-.section__palette__lien__carte, .section__note__lien__carte, .section__french__lien__carte, .section__delice__lien__carte {
-  position: relative;
+.section__palette__lien__carte, .section__note, .section__french, .section__delice {
   /*marche pas help!*/
 }
 
