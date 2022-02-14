@@ -5,20 +5,27 @@
 .header__reservez,  .main__titre, .section__titre{/*xiste-t-il une règle exception (pour tout le reste du html? chgt police*/
     font-family: 'Shirkhand' !important;
     height: 100%;
-    background-color: rgb(67, 56, 165);
 }
+
+
 
 .header__logo{
     height:30px;
     padding:15px;
+    
 }
 
 .header__localisation{
     background-color: rgb(231, 227, 227);
-    padding:10px 0 10px 0;
+    padding:20px 0;
+    font-size:18px;
+    
+}
+.header__localisation__icone{
+    margin-right:20px;
 }
 
-.header__logo, .header__localisation  {
+.header__logo, .header__localisation {
 display:flex;
 justify-content:center;
 }
@@ -30,21 +37,33 @@ justify-content:center;
 
 
 
-.header__reservez{
-    font-size:28px;
-    font-weight:700;
+.header__reservez > p{
+    font-size:34px;
+    font-weight:900;
+    margin:20px 70px;
+    text-align:center;
 }
 
 .header__decouvrez{
     font-size:26px;
     font-weight:500;
+    margin: 0 20px;
+    text-align:center;
 }
-.header__explorer{
+.header__explorez >button{
     font-size:20px;
     width:min-content;
     white-space:nowrap;
     border-radius: 40px;
     padding: 15px 20px;
+    color:#fff;
+    cursor:pointer;
+    background-color: pink;
+}
+
+.fonctionnement{
+    margin: 20px 0 20px 10px;
+    font-weight:1000;
 }
 
 .main, .header__slogan{
