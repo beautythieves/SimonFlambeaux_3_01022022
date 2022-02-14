@@ -1,0 +1,26 @@
+.footer {
+  background-color: #723434;
+  padding: 20px 0 30px 20px;
+  color: white;
+}
+
+.footer .footer__logo__img {
+  height: 25px;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+.footer__proposer, .footer__devenir, .footer__mentions, .footer__contact {
+  margin: 10px;
+}
+
+.fa-utensils {
+  padding-right: 10px;
+}
+
+.fa-hands-helping {
+  -webkit-transform: rotate(345deg);
+          transform: rotate(345deg);
+  font-size: 15px;
+}
+/*# sourceMappingURL=style_menu.css.map */
