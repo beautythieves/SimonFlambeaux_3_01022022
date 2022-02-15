@@ -4,12 +4,13 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         <link rel="stylesheet" href="normalize.css" />
+        <link rel="stylesheet" href="style_menu.css">
         <title>ohmyfood menu du restaurant "&#192 la française "</title>
         <script src="https://kit.fontawesome.com/a1a68e24d9.js" crossorigin="anonymous"></script>
     </head>
 
     <Body>
-        <header>
+        <header class="header">
             <div class="header__arrow">
                 <a  href="/index.html"><i class="fas fa-arrow-left"></i></a>
             </div>
@@ -26,57 +27,87 @@
             </header>
             <article class="entrees">
                 <h1 class="entrees__titre">ENTR&EacuteES</h1>
-                <div><p class="entrees__plat">Tartare de poulpes acidulé</p>
-                     <p class="entrees__accompagnement">Aux zests d'orange</p>
-                     <div class="entrees__prix">25&euro;
-                     </div> 
+
+                <div class="entrees__carte">
+                    <div class="entrees__carte__menu">
+                    <p class="entrees__carte__menu__plat">Tartare de poulpe acidulé</p>
+                    <p class="entrees__carte__menu__accompagnement">Aux zests d'orange</p>
+                    </div>   
+                    <div class="entrees__carte__menu__prix">25&euro;
+                    </div> 
                 </div>
-                <div><p class="entrees__plat">Velouté de légumes d'antan</p>
-                    <p class="entrees__accompagnement">carotte, panais, topinambour</p>
-                    <div class="entrees__prix">35&euro;
+                <div class="entrees__carte">
+                    <div class="entrees__carte__menu">
+                    <p class="entrees__carte__menu__plat">Velouté de légumes d'antan</p>
+                    <p class="entrees__carte__menu__accompagnement">Carottes, panias, topinambours</p>
+                    </div>
+                    <div class="entrees__carte__menu__prix">35&euro;
                     </div> 
                </div>
-               <div><p class="entrees__plat">Soupe à l'oignon</p>
-                <p class="entrees__accompagnement">Revisitée</p>
-                <div class="entrees__prix">20&euro;
-                </div> 
-                </div>
+               <div class="entrees__carte">
+                    <div class="entrees__carte__menu">
+                    <p class="entrees__carte__menu__plat">Soupe à l'oignon</p>
+                    <p class="entrees__carte__menu__accompagnement">Revisitée</p>
+                    </div>
+                    <div class="entrees__carte__menu__prix">20&euro;
+                    </div> 
+               </div>
             </article>
 
             <article class="plats">
                 <h1 class="plats__titre">PLATS</h1>
-                <div><p class="plats__plat">Coquilles Saint-Jacques</p>
-                     <p class="plats__accompagnement">Accompagnées d'une purée de panais</p>
-                     <div class="plats__prix">40&euro;
-                     </div> 
-                </div>
-                <div><p class="plats__plat">Magret de canard</p>
-                    <p class="plats__accompagnement">Et parmentier de pommes de terres</p>
-                    <div class="plats__prix">35&euro;
+
+                 <div class="plats__carte">
+                    <div class="plats__carte__menu">
+                    <p class="plats__carte__menu__plat">Coquilles Saint-Jacques</p>
+                    <p class="plats__carte__menu__accompagnement">Accompagnées d'une purée de panais</p>
                     </div> 
-               </div>
-               <div><p class="plats__plat">Pigeonneau d'Ille-et-Vilaine</p>
-                    <p class="plats__accompagnement">Sur son lit de gnocchis aux légumes</p>
-                    <div class="plats__prix">44&euro;
+                    <div class="plats__carte__menu__prix">40&euro;
+                    </div> 
+                </div>
+                <div class="plats__carte">
+                    <div class="plats__carte__menu">
+                    <p class="plats__carte__menu__plat">Magret de canard</p>
+                    <p class="plats__carte__menu__accompagnement">Et parmentier de pommes de terres</p>
+                    </div> 
+                    <div class="plats__carte__menu__prix">35&euro;
+                    </div> 
+                </div>
+                <div class="plats__carte">
+                    <div class="plats__carte__menu">
+                    <p class="plats__carte__menu__plat">Pigeonneau d'Ile-et-Vilaine</p>
+                    <p class="plats__carte__menu__accompagnement">Sur son lit de gnocchis aux légumes</p>
+                    </div> 
+                    <div class="plats__carte__menu__prix">44&euro;
                     </div> 
                 </div>
             </article>
 
             <article class="desserts">
                 <h1 class="desserts__titre">DESSERTS</h1>
-                <div><p class="desserts__plat">Pétales de violettes glacés</p>
-                     <p class="desserts__accompagnement">Et purée de noisettes</p>
-                     <div class="desserts__prix">18&euro;
-                     </div> 
-                </div>
-                <div><p class="desserts__plat">Fondant au chocolat</p>
-                    <p class="plats__accompagnement">Revisité</p>
-                    <div class="plats__prix">22&euro;
+
+                 <div class="desserts__carte">
+                    <div class="desserts__carte__menu">
+                    <p class="desserts__carte__menu__plat">Pétales de violettes glacés</p>
+                    <p class="desserts__carte__menu__accompagnement">Et purée de noisettes</p>
+                    </div>
+                    <div class="desserts__carte__menu__prix">18&euro;
                     </div> 
-               </div>
-               <div><p class="desserts__plat">Millefeuille croustillant</p>
-                    <p class="desserts__accompagnement">Myrtilles et pâte d'amande</p>
-                    <div class="desserts__prix">23&euro;
+                </div>
+                <div class="desserts__carte">
+                    <div class="desserts__carte__menu">
+                    <p class="desserts__carte__menu__plat">Fondant au chocolat</p>
+                    <p class="desserts__carte__menu__accompagnement">Revisité</p>
+                    </div>
+                    <div class="desserts__carte__menu__prix">22&euro;
+                    </div> 
+                </div>
+                <div class="desserts__carte">
+                    <div class="desserts__carte__menu">
+                    <p class="desserts__carte__menu__plat">Millefeuille croustillant</p>
+                    <p class="desserts__carte__menu__accompagnement">Myrtilles et pâte d'amande</p>
+                    </div>
+                    <div class="desserts__carte__menu__prix">23&euro;
                     </div> 
                 </div>
                 <div>
@@ -94,6 +125,6 @@
             </div>
             <div class="footer__devenir"><i class="fas fa-hands-helping"></i> Devenir partenaire</div>
             <div class="footer__mentions">Mentions légales</div>
-            <div class="footer__contact">Contact</div>
+            <div class="footer__contact"><a href="mailto@ohmyfood.com">Contact</a></div>
         </footer>
     </Body>
