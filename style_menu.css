@@ -27,7 +27,7 @@
   bottom:50px;
   background-color:rgb(226, 214, 214);
   border-radius:50px 50px 0 0;
-  padding: 0 20px 0 20px;
+  padding: 0 20px 80px 20px;
 }
 
 .menu__nomrestaurant{
@@ -51,9 +51,38 @@
   justify-content:space-between;
   padding:10px;
   align-items:last baseline;
+  font-size:25px;
 }
 
-.
+.entrees__carte__menu,.plats__carte__menu, .desserts__carte__menu{
+    margin:0;/*inutile*/
+}
+
+.entrees__carte__menu__plat, .plats__carte__menu__plat, .desserts__carte__menu__plat{
+    margin:0;
+    font-weight:800;
+}
+
+.entrees__carte__menu__accompagnement, .plats__carte__menu__accompagnement, .desserts__carte__menu__accompagnement{
+  margin:5px 0 5px 0;
+  font-size:smaller;
+  font-weight: lighter;
+}
+
+.commander{
+  display:block;
+  background-color:rgb(158, 44, 143);
+  margin:auto;
+  padding:20px 60px;
+  font-size: 25px;
+  color:white;
+  border-radius:50px;
+
+}
+
+.commander__bouton{
+  
+}
 
 .footer {
   background-color: #723434;
