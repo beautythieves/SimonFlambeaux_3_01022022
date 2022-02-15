@@ -4,12 +4,13 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         <link rel="stylesheet" href="normalize.css" />
+        <link rel="stylesheet" href="style_menu.css">
         <title>ohmyfood menu du restaurant "Le délice des sens"</title>
         <script src="https://kit.fontawesome.com/a1a68e24d9.js" crossorigin="anonymous"></script>
     </head>
 
     <Body>
-        <header>
+        <header class="header">
             <div class="header__arrow">
                 <a  href="/index.html"><i class="fas fa-arrow-left"></i></a>
             </div>
@@ -26,60 +27,70 @@
             </header>
             <article class="entrees">
                 <h1 class="entrees__titre">ENTR&EacuteES</h1>
-                <div><p class="entrees__plat">Tartare de thon</p>
-                     <p class="entrees__accompagnement">Assaisonné au yuzu</p>
-                     <div class="entrees__prix">25&euro;
-                     </div> 
+
+                <div class="entrees__carte">
+                    <div class="entrees__carte__menu">
+                    <p class="entrees__carte__menu__plat">Tartare de thon</p>
+                    <p class="entrees__carte__menu__accompagnement">Assaisoné au yuzu</p>
+                    </div>   
+                    <div class="entrees__carte__menu__prix">25&euro;
+                    </div> 
                 </div>
-                <div><p class="entrees__plat">Bouchée de homard croustillant</p>
-                    <p class="entrees__accompagnement">Et sa farandole de petits légumes</p>
-                    <div class="entrees__prix">35&euro;
+                <div class="entrees__carte">
+                    <div class="entrees__carte__menu">
+                    <p class="entrees__carte__menu__plat">Bouchée de homard croustillant</p>
+                    <p class="entrees__carte__menu__accompagnement">Et sa farandole de petits légumes</p>
+                    </div>
+                    <div class="entrees__carte__menu__prix">35&euro;
                     </div> 
                </div>
-               <div><p class="entrees__plat">velouté de cèpes</p>
-                    <p class="entrees__accompagnement">Aux truffes</p>
-                    <div class="entrees__prix">20&euro;
+               <div class="entrees__carte">
+                    <div class="entrees__carte__menu">
+                    <p class="entrees__carte__menu__plat">Velouté de cèpes</p>
+                    <p class="entrees__carte__menu__accompagnement">Aux truffes</p>
+                    </div>
+                    <div class="entrees__carte__menu__prix">20&euro;
                     </div> 
-                </div>
+               </div>
             </article>
 
             <article class="plats">
                 <h1 class="plats__titre">PLATS</h1>
-                <div><p class="plats__plat">Poulet rôti aux herbes de provence</p>
-                     <p class="plats__accompagnement">Et sa crème de truffe</p>
-                     <div class="plats__prix">40&euro;
-                     </div> 
-                </div>
-                <div><p class="plats__plat">Langouste rôtie</p>
-                    <p class="plats__accompagnement">Et ses légumes de saison</p>
-                    <div class="plats__prix">35&euro;
+                <div><p class="plats__plat">Pulet rôti aux herbes de Provence</p>
+                    <p class="plats__accompagnement">Et sa crème de truffe</p>
+                    <div class="plats__prix">40&euro;
                     </div> 
                </div>
-               <div><p class="plats__plat">Côte de boeuf angus</p>
-                    <p class="plats__accompagnement">Et sa purée de panais</p>
-                    <div class="plats__prix">44&euro;
-                    </div> 
-                </div>
+               <div><p class="plats__plat">Langoustine rôtie</p>
+                   <p class="plats__accompagnement">Et ses légumes de saison</p>
+                   <div class="plats__prix">35&euro;
+                   </div> 
+              </div>
+              <div><p class="plats__plat">Côte de boeuf angus</p>
+                   <p class="plats__accompagnement">Et sa purée de panais</p>
+                   <div class="plats__prix">44&euro;
+                   </div> 
+               </div>
             </article>
 
             <article class="desserts">
                 <h1 class="desserts__titre">DESSERTS</h1>
-                <div><p class="desserts__plat">Farandole de desserts</p>
-                     <p class="desserts__accompagnement">Du chef</p>
-                     <div class="desserts__prix">18&euro;
-                     </div> 
-                </div>
-                <div><p class="desserts__plat">Crème brûlée</p>
-                    <p class="plats__accompagnement">Revisitée</p>
-                    <div class="plats__prix">22&euro;
+                <div><p class="desserts__plat">Farandole de dessets</p>
+                    <p class="desserts__accompagnement">Du chef</p>
+                    <div class="desserts__prix">18&euro;
                     </div> 
                </div>
-               <div><p class="desserts__plat">Tiramisu</p>
-                    <p class="desserts__accompagnement">&#192; la noisette</p>
-                    <div class="desserts__prix">23&euro;
-                    </div> 
-                </div>
-                <div>
+               <div><p class="desserts__plat">Crème brûlé<em></em></p>
+                   <p class="plats__accompagnement">Revisitée</p>
+                   <div class="plats__prix">22&euro;
+                   </div> 
+              </div>
+              <div><p class="desserts__plat">Tiramisu</p>
+                   <p class="desserts__accompagnement">&Agrave; la noisette</p>
+                   <div class="desserts__prix">23&euro;
+                   </div> 
+               </div>
+               <div>
                     <button class="commander"><div class="commander__bouton">Commander</div>
                        </button>
                 </div>
@@ -94,6 +105,6 @@
             </div>
             <div class="footer__devenir"><i class="fas fa-hands-helping"></i> Devenir partenaire</div>
             <div class="footer__mentions">Mentions légales</div>
-            <div class="footer__contact">Contact</div>
+            <div class="footer__contact"><a href="mailto@ohmyfood.com">Contact</a></div>
         </footer>
     </Body>

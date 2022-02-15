@@ -4,12 +4,13 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
         <link rel="stylesheet" href="normalize.css" />
+        <link rel="stylesheet" href="style_menu.css">
         <title>ohmyfood menu du restaurant "La note enchantée"</title>
         <script src="https://kit.fontawesome.com/a1a68e24d9.js" crossorigin="anonymous"></script>
     </head>
 
     <Body>
-        <header>
+        <header class="header">
             <div class="header__arrow">
                 <a  href="/index.html"><i class="fas fa-arrow-left"></i></a>
             </div>
@@ -18,7 +19,7 @@
             </div>
         </header>
         
-        <main class= "image__restaurant__lapalette">
+        <main class= "image__restaurant__lanotenechantee">
             <img src="images/restaurants/note.jpg" alt="la note enchantée"/>
         </main>
         <section class="menu">
@@ -26,26 +27,39 @@
             </header>
             <article class="entrees">
                 <h1 class="entrees__titre">ENTR&EacuteES</h1>
-                <div><p class="entrees__plat">Ravioles de foie gras</p>
-                     <p class="entrees__accompagnement">Accompagnés de leur crème à la truffe</p>
-                     <div class="entrees__prix">25&euro;
-                     </div> 
+
+                 <div class="entrees__carte">
+                    <div class="entrees__carte__menu">
+                    <p class="entrees__carte__menu__plat">Ravioles de foie gras</p>
+                    <p class="entrees__carte__menu__accompagnement">Accompagné de leur crème à la truffe</p>
+                    </div>   
+                    <div class="entrees__carte__menu__prix">25&euro;
+                    </div> 
                 </div>
-                <div><p class="entrees__plat">Caviar osciètre</p>
-                    <p class="entrees__accompagnement">Sur blini à la farine de blé noir</p>
-                    <div class="entrees__prix">35&euro;
+                <div class="entrees__carte">
+                    <div class="entrees__carte__menu">
+                    <p class="entrees__carte__menu__plat">Caviar osciètre</p>
+                    <p class="entrees__carte__menu__accompagnement">Sur blini à la farine de blé noir</p>
+                    </div>
+                    <div class="entrees__carte__menu__prix">35&euro;
                     </div> 
                </div>
-               <div><p class="entrees__plat">Homard et espuma de...</p>
-                    <p class="entrees__accompagnement">Mariné aux zests d'orange</p>
-                    <div class="entrees__prix">20&euro;
+               <div class="entrees__carte">
+                    <div class="entrees__carte__menu">
+                    <p class="entrees__carte__menu__plat">Homard et espuma de...</p>
+                    <p class="entrees__carte__menu__accompagnement">Mariné aux zests d'orange</p>
+                    </div>
+                    <div class="entrees__carte__menu__prix">20&euro;
                     </div> 
+               </div>
+               <div class="entrees__carte">
+                <div class="entrees__carte__menu">
+                <p class="entrees__carte__menu__plat">Foie gras de canard cuit entier</p>
+                <p class="entrees__carte__menu__accompagnement">Confiture de figues et pain toasté</p>
                 </div>
-                <div><p class="entrees__plat">Foie gras de canard cuit entier</p>
-                    <p class="entrees__accompagnement">Confiture de figue et pain toasté</p>
-                    <div class="entrees__prix">35&euro;
-                    </div> 
-                </div>
+                <div class="entrees__carte__menu__prix">35&euro;
+                </div> 
+           </div>
             </article>
 
             <article class="plats">
@@ -99,6 +113,6 @@
             </div>
             <div class="footer__devenir"><i class="fas fa-hands-helping"></i> Devenir partenaire</div>
             <div class="footer__mentions">Mentions légales</div>
-            <div class="footer__contact">Contact</div>
+            <div class="footer__contact"><a href="mailto@ohmyfood.com">Contact</a></div>
         </footer>
     </Body>
