@@ -43,15 +43,17 @@
 
 }
 
-.entrees__carte{
+.entrees__carte, .plats__carte, .desserts__carte{
   background-color:white;
   border-radius:25px;
   display:flex;
   margin-bottom:20px;
   justify-content:space-between;
   padding:10px;
-  align-items:last-baseline;
+  align-items:last baseline;
 }
+
+.
 
 .footer {
   background-color: #723434;
