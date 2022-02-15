@@ -39,20 +39,28 @@
 .fa-heart{
   margin-top:50px;
   font-size:35px;
-  font-weight:lighter;
+  font-weight:lighter;  /*pb pour changer la graisse de l'icone*/
+
 }
 
-.
+.entrees__carte{
+  background-color:white;
+  border-radius:25px;
+  display:flex;
+  margin-bottom:20px;
+  justify-content:space-between;
+  padding:10px;
+  align-items:last-baseline;
+}
 
 .footer {
   background-color: #723434;
   padding: 20px 0 30px 20px;
-  color: white;/*pb pour changer la graisse de l'icone*/
 }
 
-.footer .footer__logo__img {
+.footer__logo > img {
   height: 25px;
-  -webkit-filter: invert(1);
+  color: white;
           filter: invert(1);
 }
 
