@@ -109,10 +109,11 @@ justify-content:center;
 
 .section__palette__lien, .section__note__lien, .section__french__lien, .section__delice__lien{/*cela ne amrche pas*/
     text-decoration:none;
-    position:relative;  
+   
 }
 
-.section__palette__lien__carte, .section__note, .section__french, .section__delice{
+.section__palette__lien__carte {
+    position:relative;
         /*marche pas help!*/
     }
 
@@ -126,8 +127,8 @@ justify-content:center;
 
 .section__palette__lien__carte__nouveau, .section__note__lien__carte__nouveau{
     position:absolute;/*a voir avec julien text deco qui ne marche pas*/
-    bottom:250px;
-    left:400px;
+    top:50px;
+    right:50px;
     text-decoration:none;
     outline:none;
     color:green;
@@ -151,10 +152,10 @@ justify-content:center;
 }
 
 
-.fa-heart{
-    position:relative;
+.fa-heart{/*pb avec le coeur de la palette du gout*/
+    position:absolute;
     bottom:50px;
-    left:450px;
+    right:50px;
     font-size:35px;
     color:black;
     font-weight:300;
