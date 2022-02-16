@@ -17,7 +17,8 @@
 .header__localisation {
   background-color: #e7e3e3;
   padding: 20px 0;
-  font-size: 18px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .header__localisation__icone {
@@ -66,7 +67,7 @@
 }
 
 .fonctionnement {
-  margin: 20px 0 20px 10px;
+  margin: 80px 0 20px 10px;
   font-weight: 1000;
 }
 
@@ -85,6 +86,15 @@
 
 .main__choisissez, .main__main__composez, .main__degustez {
   margin: 30px 30px;
+}
+
+.main__nombre {
+  display: inline-block;
+  width: 20px;
+  background: #00ff40;
+  height: 20px;
+  text-align: center;
+  border-radius: 100%;
 }
 
 .main__button {
