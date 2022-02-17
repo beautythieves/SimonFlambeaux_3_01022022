@@ -2,10 +2,12 @@
   font-family:'roboto';
 }
 
-.header__reservez,  .main__titre, .section__titre{
-  font-family: 'Shirkhand' !important;
+.menu__nomrestaurant {
+  font-family: 'Shrikhand' !important;
   height: 100%;
+  
 }
+
 
 .header{
   display:flex;
@@ -38,17 +40,27 @@
   padding: 0 20px 80px 20px;
 }
 
-.menu__nomrestaurant{
+.menu__titre{
   display:flex;
   justify-content:space-evenly;
-  font-size:25px;
+  font-size:30px;
+  padding:40px 0 0 0;
 }
 
 .fa-heart{
-  margin-top:50px;
-  font-size:35px;
-  font-weight:lighter;  /*pb pour changer la graisse de l'icone*/
+  font-size:20px;
+  font-weight:100;  /*pb pour changer la graisse de l'icone*/
 
+}
+
+.entrees__titre, .plats__titre, .desserts__titre{
+  font-size:20px;
+  margin-top: 40px;
+}
+
+.entrees__titre__souligne, .plats__titre__souligne, .desserts__titre__souligne{
+  padding-bottom:5px;
+  border-bottom: 3px solid rgb(104, 206, 104);
 }
 
 .entrees__carte, .plats__carte, .desserts__carte{
