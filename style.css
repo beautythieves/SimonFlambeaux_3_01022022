@@ -84,8 +84,17 @@
           align-items: center;
 }
 
-.main__choisissez, .main__main__composez, .main__degustez {
-  margin: 30px 30px;
+.main__choisissez, .main__composez, .main__degustez {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 30px;
+  background: #f6f6f6;
+  -webkit-box-shadow: #a0249a 5px 5px 5px 5px;
+          box-shadow: #a0249a 5px 5px 5px 5px;
+  padding: 20px;
+  border-radius: 50px;
+  gap: 10px;
 }
 
 .main__nombre {
