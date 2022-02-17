@@ -2,7 +2,7 @@
   font-family:'roboto';
 }
 
-.header__reservez,  .main__titre, .section__titre{/*xiste-t-il une règle exception (pour tout le reste du html? chgt police*/
+.header__reservez,  .main__titre, .section__titre{
   font-family: 'Shirkhand' !important;
   height: 100%;
 }
