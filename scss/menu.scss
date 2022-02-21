@@ -68,6 +68,15 @@
     margin-bottom:30px;
   }
   
+@keyframes fade{
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
   .entrees__carte, .plats__carte, .desserts__carte{
     background-color:white;
     border-radius:25px;
@@ -77,6 +86,8 @@
     padding:10px;
     align-items:last baseline;
     font-size:20px;
+    -webkit-animation: fade 1s;
+    animation:fade 1s;
   }
   
   .entrees__carte__menu,.plats__carte__menu, .desserts__carte__menu{

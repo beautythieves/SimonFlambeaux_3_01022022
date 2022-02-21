@@ -296,6 +296,28 @@
   margin-bottom: 30px;
 }
 
+@-webkit-keyframes fade {
+  from {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  to {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@keyframes fade {
+  from {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  to {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
 .entrees__carte, .plats__carte, .desserts__carte {
   background-color: white;
   border-radius: 25px;
@@ -311,6 +333,8 @@
       -ms-flex-align: last baseline;
           align-items: last baseline;
   font-size: 20px;
+  -webkit-animation: fade 1s;
+  animation: fade 1s;
 }
 
 .entrees__carte__menu, .plats__carte__menu, .desserts__carte__menu {
