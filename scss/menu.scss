@@ -1,0 +1,123 @@
+.body{
+    font-family:'roboto';
+  }
+  
+  .menu__nomrestaurant {
+    font-family: 'Shrikhand' !important;
+    height: 100%;
+    
+  }
+  
+  
+  .header{
+    display:flex;
+    justify-content:center;
+    position:relative;
+  }
+  
+  .header__arrow{
+    position:absolute;
+    left:10px;
+    top:20px;
+  }
+  
+  .header__logo >img{
+    height: 30px;
+    padding: 15px;
+  }
+  
+  .image__restaurant__lapalette >img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+  }
+  
+  .menu{
+    position:relative;
+    bottom:50px;
+    background-color:rgb(226, 214, 214);
+    border-radius:50px 50px 0 0;
+    padding: 0 20px 80px 20px;
+  }
+  
+  .menu__titre{
+    display:flex;
+    justify-content:space-evenly;
+    font-size:30px;
+    padding:40px 0 0 0;
+  }
+  
+  .fa-heart{
+    font-size:20px;
+    font-weight:100;  /*pb pour changer la graisse de l'icone*/
+  
+  }
+  
+  .entrees__titre, .plats__titre, .desserts__titre{
+    font-size:20px;
+    margin-top: 40px;
+  }
+  
+  .entrees__titre__souligne, .plats__titre__souligne, .desserts__titre__souligne{
+    padding-bottom:5px;
+    border-bottom: 3px solid rgb(104, 206, 104);
+   
+  }
+  
+  .entrees__titre{
+    margin-bottom:30px;
+  }
+  
+  .entrees__carte, .plats__carte, .desserts__carte{
+    background-color:white;
+    border-radius:25px;
+    display:flex;
+    margin-bottom:20px;
+    justify-content:space-between;
+    padding:10px;
+    align-items:last baseline;
+    font-size:20px;
+  }
+  
+  .entrees__carte__menu,.plats__carte__menu, .desserts__carte__menu{
+      margin:0;/*inutile*/
+  }
+  
+  .entrees__carte__menu__plat, .plats__carte__menu__plat, .desserts__carte__menu__plat{
+      margin:0;
+      font-weight :900;/* pb ici, le font weight est au max mais n'est tjrs pas assez gras/maquette*/
+  }
+  
+  .entrees__carte__menu__accompagnement, .plats__carte__menu__accompagnement, .desserts__carte__menu__accompagnement{
+    margin:5px 0 5px 0;
+    font-size:smaller;
+    font-weight: lighter;
+  }
+  
+  .entrees__carte__menu__prix{
+    cursor:grab;
+  }
+  
+  .entrees__carte__menu__prix:hover{
+    transform:translateX(-50px);
+  
+  }
+  
+  .commander{
+    display:block;
+    background-color:rgb(158, 44, 143);
+    margin:auto;
+    padding:20px 60px;
+    font-size: 25px;
+    color:white;
+    border-radius:55px;
+  
+  }
+  
+  .commander__bouton{
+    
+  }
+  
+  /*pour le footer, le pb sera réglé quand lien vers scss car m^me règles que pour page d'accueil*/
+  
+  

@@ -30,8 +30,8 @@
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
 }
 
 .header__slogan {
@@ -77,11 +77,11 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .main__choisissez, .main__composez, .main__degustez {
@@ -91,7 +91,7 @@
   margin: 30px;
   background: #f6f6f6;
   -webkit-box-shadow: #a0249a 5px 5px 5px 5px;
-          box-shadow: #a0249a 5px 5px 5px 5px;
+  box-shadow: #a0249a 5px 5px 5px 5px;
   padding: 20px;
   border-radius: 50px;
   gap: 10px;
@@ -125,8 +125,8 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 
 .section .section__titre {
@@ -153,7 +153,7 @@
 .section__palette__lien__carte__img, .section__note__lien__carte__img, .section__french__lien__carte__img, .section__delice__lien__carte__img {
   width: 100%;
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   height: 300px;
   border-radius: 25px 25px 0 0;
 }
@@ -185,7 +185,7 @@
   margin: 10px 0 16px 20px;
 }
 
-.fa-heart {
+.section .fa-heart {
   /*pb avec le coeur de la palette du gout*/
   position: absolute;
   bottom: 50px;
@@ -204,7 +204,7 @@
 .footer .footer__logo__img {
   height: 25px;
   -webkit-filter: invert(1);
-          filter: invert(1);
+  filter: invert(1);
 }
 
 .footer__proposer, .footer__devenir, .footer__mentions, .footer__contact {
@@ -217,7 +217,7 @@
 
 .fa-hands-helping {
   -webkit-transform: rotate(345deg);
-          transform: rotate(345deg);
+  transform: rotate(345deg);
   font-size: 15px;
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=index.css.map */
