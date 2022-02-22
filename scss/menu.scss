@@ -68,7 +68,7 @@
     margin-bottom:30px;
   }
   
-@keyframes fade{
+@keyframes fade{/* @webkit keyframes ou keyframes?*/
   from {
     transform: translateX(-100%);
   }
