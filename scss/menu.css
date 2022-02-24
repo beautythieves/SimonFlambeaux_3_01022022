@@ -6,6 +6,13 @@
 .menu__nomrestaurant {
   font-family: 'Shrikhand' !important;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 20px 0 20px;
 }
 
 .header {
@@ -56,9 +63,7 @@
 }
 
 .fa-heart {
-  font-size: 20px;
-  font-weight: 100;
-  /*pb pour changer la graisse de l'icone*/
+  margin-top: 30px;
 }
 
 .entrees__titre, .plats__titre, .desserts__titre {
@@ -76,7 +81,6 @@
 }
 
 @-webkit-keyframes fade {
-  /* @webkit keyframes ou keyframes?*/
   from {
     -webkit-transform: translateX(-100%);
             transform: translateX(-100%);
@@ -88,7 +92,17 @@
 }
 
 @keyframes fade {
-  /* @webkit keyframes ou keyframes?*/
+  from {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  to {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes {
   from {
     -webkit-transform: translateX(-100%);
             transform: translateX(-100%);
@@ -138,17 +152,19 @@
 }
 
 .entrees__carte__menu__prix {
-  cursor: -webkit-grab;
-  cursor: grab;
+  cursor: pointer;
+}
+
+.entrees__carte__menu__prix__check {
+  background-color: #99e2d0;
+  position: relative;
+  right: -60px;
 }
 
 .prix__check {
   color: #99e2d0;
   position: relative;
   right: -60px;
-  border: 9px solid #99e2d0;
-  /*je ne sais pas comment remplir le bouton check en vert à l'ouverture*/
-  /*pb de contour de l'icone voir flaticon?*/
 }
 
 .entrees__carte__menu__prix:hover {
@@ -167,13 +183,19 @@
   font-size: 25px;
   color: white;
   border-radius: 55px;
+  -webkit-box-shadow: 0px 0px 7px 1px #000000;
+  box-shadow: 0px 0px 7px 1px #000000;
 }
 
 .commander:hover {
   cursor: -webkit-grab;
   cursor: grab;
+  -webkit-box-shadow: 0px 2px 15px 1px #000000;
+  box-shadow: 0px 2px 15px 1px #000000;
   background: -webkit-gradient(linear, left top, left bottom, from(#e470da), to(#ec9be6));
   background: linear-gradient(#e470da, #ec9be6);
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 /*pour le footer, le pb sera réglé quand lien vers scss car m^me règles que pour page d'accueil*/

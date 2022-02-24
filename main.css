@@ -3,29 +3,28 @@
   font-family: 'roboto';
 }
 
-.header__reservez, .main__titre, .section__titre {
-  /*xiste-t-il une règle exception (pour tout le reste du html? chgt police*/
+.header__index__reservez, .main__titre, .section__titre {
   font-family: 'Shirkhand' !important;
   height: 100%;
 }
 
-.header__logo {
+.header__index__logo {
   height: 30px;
   padding: 15px;
 }
 
-.header__localisation {
+.header__index__localisation {
   background-color: #e7e3e3;
   padding: 20px 0;
   font-size: 20px;
   font-weight: bold;
 }
 
-.header__localisation__icone {
+.header__index__localisation__icone {
   margin-right: 20px;
 }
 
-.header__logo, .header__localisation {
+.header__index__logo, .header__index__localisation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -34,26 +33,35 @@
   justify-content: center;
 }
 
-.header__slogan {
+.header__index__slogan {
   background-color: #f1eded;
   padding: 25px 0 55px 0;
 }
 
-.header__reservez > p {
+.header__index__reservez > p {
   font-size: 34px;
   font-weight: 900;
   margin: 20px 70px;
   text-align: center;
 }
 
-.header__decouvrez {
+.header__index__decouvrez {
   font-size: 26px;
   font-weight: 500;
   margin: 0 20px;
   text-align: center;
 }
 
-.header__explorez > button {
+.header__index__explorez {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header__index__explorez > button {
   font-size: 20px;
   width: -webkit-min-content;
   width: -moz-min-content;
@@ -63,7 +71,8 @@
   padding: 15px 20px;
   color: #fff;
   cursor: pointer;
-  background-color: pink;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9e2c8f), to(#e470da));
+  background: linear-gradient(#9e2c8f, #e470da);
 }
 
 .fonctionnement {
@@ -227,6 +236,13 @@
 .menu__nomrestaurant {
   font-family: 'Shrikhand' !important;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 20px 0 20px;
 }
 
 .header {
@@ -277,9 +293,7 @@
 }
 
 .fa-heart {
-  font-size: 20px;
-  font-weight: 100;
-  /*pb pour changer la graisse de l'icone*/
+  margin-top: 30px;
 }
 
 .entrees__titre, .plats__titre, .desserts__titre {
@@ -297,7 +311,6 @@
 }
 
 @-webkit-keyframes fade {
-  /* @webkit keyframes ou keyframes?*/
   from {
     -webkit-transform: translateX(-100%);
             transform: translateX(-100%);
@@ -309,7 +322,17 @@
 }
 
 @keyframes fade {
-  /* @webkit keyframes ou keyframes?*/
+  from {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+  to {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+}
+
+@-webkit-keyframes {
   from {
     -webkit-transform: translateX(-100%);
             transform: translateX(-100%);
@@ -359,17 +382,19 @@
 }
 
 .entrees__carte__menu__prix {
-  cursor: -webkit-grab;
-  cursor: grab;
+  cursor: pointer;
+}
+
+.entrees__carte__menu__prix__check {
+  background-color: #99e2d0;
+  position: relative;
+  right: -60px;
 }
 
 .prix__check {
   color: #99e2d0;
   position: relative;
   right: -60px;
-  border: 9px solid #99e2d0;
-  /*je ne sais pas comment remplir le bouton check en vert à l'ouverture*/
-  /*pb de contour de l'icone voir flaticon?*/
 }
 
 .entrees__carte__menu__prix:hover {
@@ -388,13 +413,19 @@
   font-size: 25px;
   color: white;
   border-radius: 55px;
+  -webkit-box-shadow: 0px 0px 7px 1px #000000;
+  box-shadow: 0px 0px 7px 1px #000000;
 }
 
 .commander:hover {
   cursor: -webkit-grab;
   cursor: grab;
+  -webkit-box-shadow: 0px 2px 15px 1px #000000;
+  box-shadow: 0px 2px 15px 1px #000000;
   background: -webkit-gradient(linear, left top, left bottom, from(#e470da), to(#ec9be6));
   background: linear-gradient(#e470da, #ec9be6);
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 /*pour le footer, le pb sera réglé quand lien vers scss car m^me règles que pour page d'accueil*/

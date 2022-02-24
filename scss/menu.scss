@@ -5,6 +5,9 @@
   .menu__nomrestaurant {
     font-family: 'Shrikhand' !important;
     height: 100%;
+    display:flex;
+    justify-content:space-between;
+    margin: 0 20px 0 20px;
     
   }
   
@@ -48,8 +51,7 @@
   }
   
   .fa-heart{
-    font-size:20px;
-    font-weight:100;  /*pb pour changer la graisse de l'icone*/
+   margin-top:30px;
   
   }
   
@@ -68,7 +70,7 @@
     margin-bottom:30px;
   }
   
-@keyframes fade{/* @webkit keyframes ou keyframes?*/
+@keyframes fade{
   from {
     transform: translateX(-100%);
   }
@@ -77,6 +79,14 @@
   }
 }
 
+@-webkit-keyframes{
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
   .entrees__carte, .plats__carte, .desserts__carte{
     background-color:white;
     border-radius:25px;
@@ -107,15 +117,21 @@
   }
   
   .entrees__carte__menu__prix{
-    cursor:grab;
+    cursor:pointer;
   }
   
+.entrees__carte__menu__prix__check{
+  background-color:rgb(153,226,208);
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  cursor:pointer;
+}
+
   .prix__check{
     color:rgb(153,226,208);
     position:relative;   
     right:-60px;
-    border:9px solid rgb(153,226,208);/*je ne sais pas comment remplir le bouton check en vert à l'ouverture*/
-    /*pb de contour de l'icone voir flaticon?*/
+    
   }
   .entrees__carte__menu__prix:hover{
     transform:translateX(-50px);
@@ -131,11 +147,15 @@
     font-size: 25px;
     color:white;
     border-radius:55px;
-  
+    -webkit-box-shadow: 0px 0px 7px 1px #000000; 
+    box-shadow: 0px 0px 7px 1px #000000;
   }
   .commander:hover{
     cursor:grab;
+    -webkit-box-shadow: 0px 2px 15px 1px #000000; 
+    box-shadow: 0px 2px 15px 1px #000000;
     background: linear-gradient(rgb(228,112,218), rgb(236,155,230));
+    transition: all 1s ease-in-out;
   }
   .commander__bouton{
 

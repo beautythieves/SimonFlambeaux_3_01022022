@@ -1,31 +1,35 @@
 @charset "UTF-8";
+
+.loading__spiner{
+  
+}
+
 .body {
   font-family: 'roboto';
 }
 
-.header__reservez, .main__titre, .section__titre {
-  /*xiste-t-il une règle exception (pour tout le reste du html? chgt police*/
+.header__index__reservez, .main__titre, .section__titre {
   font-family: 'Shirkhand' !important;
   height: 100%;
 }
 
-.header__logo {
+.header__index__logo {
   height: 30px;
   padding: 15px;
 }
 
-.header__localisation {
+.header__index__localisation {
   background-color: #e7e3e3;
   padding: 20px 0;
   font-size: 20px;
   font-weight: bold;
 }
 
-.header__localisation__icone {
+.header__index__localisation__icone {
   margin-right: 20px;
 }
 
-.header__logo, .header__localisation {
+.header__index__logo, .header__index__localisation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -34,26 +38,31 @@
           justify-content: center;
 }
 
-.header__slogan {
+.header__index__slogan {
   background-color: #f1eded;
   padding: 25px 0 55px 0;
 }
 
-.header__reservez > p {
+.header__index__reservez > p {
   font-size: 34px;
   font-weight: 900;
   margin: 20px 70px;
   text-align: center;
 }
 
-.header__decouvrez {
+.header__index__decouvrez {
   font-size: 26px;
   font-weight: 500;
   margin: 0 20px;
   text-align: center;
 }
 
-.header__explorez > button {
+.header__index__explorez{
+  display:flex;
+  justify-content:center;
+}
+
+.header__index__explorez > button {
   font-size: 20px;
   width: -webkit-min-content;
   width: -moz-min-content;
@@ -63,7 +72,8 @@
   padding: 15px 20px;
   color: #fff;
   cursor: pointer;
-  background-color: pink;
+  background: linear-gradient( rgb(158,44,143), rgb(228,112,218));
+
 }
 
 .fonctionnement {
