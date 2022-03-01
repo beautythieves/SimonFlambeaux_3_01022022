@@ -81,7 +81,7 @@
   }
 }
 
-@-webkit-keyframes{
+@-webkit-keyframes fade{
   from {
     transform: translatey(30px);
     opacity:0;
@@ -124,31 +124,30 @@
     cursor:pointer;
   }
   
-.entrees__carte__menu__prix__check{
+  .entrees__carte__menu__prix__check{
+    background-color:rgb(153,226,208);
+    width:0;
+  }
+
+ /*ajout des keyframes ici pour prix check*/
+
+.prix__check{
   display:flex;
   align-items:center;
   background-color:rgb(153,226,208);
+  color:#fff;
   cursor:pointer;
-  width:0;  
   text-align: center;
   -webkit-box-align: center;
   -ms-flex-align: center;
-  align-items: center;
-  -webkit-transition: width 1s;
-  -o-transition: width 1s;
-  transition: width 1s;
-  padding-top: 25px;
-
+  position:relative;
+  left:30px;
+  border:8px solid rgb(153,226,208);/*je bottte en touche*/
 }
 
-  .prix__check{/*pb ici*/
-    color:rgb(153,226,208);
-    position:relative;   
-    right:-60px;
-      &:hover{
-        translate: 60px 0px;
-      }
-   }
+  .prix__check:hover{
+    translate: -30px 0px;
+  }
 
 
   .entrees__carte__menu__prix:hover{
