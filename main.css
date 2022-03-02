@@ -74,8 +74,16 @@
   padding: 15px 20px;
   color: #fff;
   cursor: pointer;
+  -webkit-box-shadow: 0px 9px 15px -3px #90A6A6;
+  box-shadow: 0px 9px 15px -3px #90A6A6;
   background: -webkit-gradient(linear, left top, left bottom, from(#9e2c8f), to(#e470da));
   background: linear-gradient(#9e2c8f, #e470da);
+}
+
+.header__index__explorez > button:hover {
+  opacity: 0.8;
+  -webkit-box-shadow: 0px 9px 15px 5px #90A6A6;
+  box-shadow: 0px 9px 15px 5px #90A6A6;
 }
 
 .fonctionnement {
@@ -103,14 +111,24 @@
   -ms-flex-pack: distribute;
       justify-content: space-around;
   margin: 30px;
-  background: #f6f6f6;
-  -webkit-box-shadow: #a0249a 5px 5px 5px 5px;
-  box-shadow: #a0249a 5px 5px 5px 5px;
+  background-color: #f1eded;
+  -webkit-box-shadow: 7px 5px 5px -1px #90A6A6;
+  box-shadow: 7px 5px 5px -1px #90A6A6;
   padding: 20px;
   border-radius: 50px;
   gap: 10px;
   width: 70%;
   position: relative;
+}
+
+.main__choisissez:hover, .main__composez:hover, .main__degustez:hover {
+  -webkit-box-shadow: #90A6A6 5px 5px 5px 5px;
+          box-shadow: #90A6A6 5px 5px 5px 5px;
+  background-color: #f6f6f6;
+  color: #9356DC;
+  /*comment cibler uniquement les icones 
+      lorsque hover car le changement se produit sur le bouton
+      pointer  events?*/
 }
 
 .main__nombre {
@@ -125,6 +143,7 @@
           align-items: center;
   width: 30px;
   background: #9356DC;
+  color: white;
   height: 30px;
   border-radius: 100%;
   margin-top: 5px;
@@ -135,7 +154,7 @@
 
 .material-icons {
   padding-top: 5px !important;
-  font-size: 28px !important;
+  font-size: 30px !important;
 }
 
 .main__text {
@@ -152,6 +171,7 @@
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  background-color: #f1eded;
 }
 
 .section .section__titre {
@@ -159,7 +179,7 @@
 }
 
 .section__palette, .section__note, .section__french, .section__delice {
-  border: 1px solid red;
+  border: 1px solid white;
   margin: 20px;
   border-radius: 25px;
   position: relative;
@@ -186,12 +206,12 @@
 .section__palette__lien__carte__nouveau, .section__note__lien__carte__nouveau {
   position: absolute;
   /*a voir avec julien text deco qui ne marche pas*/
-  top: 50px;
+  top: 40px;
   right: 50px;
   text-decoration: none;
   outline: none;
   color: green;
-  background-color: #11da2c;
+  background-color: #99E2D0;
   padding: 10px 20px;
   border-radius: 5px;
   font-size: 20px;
@@ -210,8 +230,11 @@
   margin: 10px 0 16px 20px;
 }
 
-.section .fa-heart {
-  /*pb avec le coeur de la palette du gout*/
+.fa-heart {
+  /*pb avec le coeur de la palette du gout
+        en retirant l'imbrication section{ avant fa_heart, le
+        coeur de la palette a bougé mais cela est tjrs incorect
+        */
   position: absolute;
   bottom: 50px;
   right: 50px;

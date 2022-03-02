@@ -75,7 +75,14 @@
   padding: 15px 20px;
   color: #fff;
   cursor: pointer;
+  -webkit-box-shadow: 0px 9px 15px -3px #90A6A6; 
+  box-shadow: 0px 9px 15px -3px #90A6A6;
   background: linear-gradient( rgb(158,44,143), rgb(228,112,218));
+    &:hover{
+      opacity:0.8;
+      -webkit-box-shadow: 0px 9px 15px 5px #90A6A6; 
+      box-shadow: 0px 9px 15px 5px #90A6A6;
+    }
 
 }
 
@@ -103,14 +110,21 @@
   display: flex;
   justify-content: space-around;
   margin: 30px;
-  background: #f6f6f6;
-  -webkit-box-shadow: #a19da1 5px 5px 5px 5px;
-          box-shadow: #a19da1 5px 5px 5px 5px;
+  background-color: #f1eded;
+  -webkit-box-shadow: 7px 5px 5px -1px #90A6A6; 
+  box-shadow: 7px 5px 5px -1px #90A6A6;
   padding: 20px;
   border-radius: 50px;
   gap: 10px;
   width:70%;
   position:relative;
+    &:hover{
+      box-shadow: #90A6A6 5px 5px 5px 5px;
+      background-color: #f6f6f6;
+      color:#9356DC;/*comment cibler uniquement les icones 
+      lorsque hover car le changement se produit sur le bouton
+      pointer  events?*/
+    }
 }
 
 .main__nombre {
@@ -144,16 +158,19 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #f1eded;
+
 }
 
 .section .section__titre {
-  font-size: 24px;
+  font-size: 40px;
+  margin:20px 0 20px 20px;
 }
 
 .section__palette, .section__note, .section__french, .section__delice {
-  border: 1px solid red;
+  border: 1px solid white;
   margin: 20px;
   border-radius: 25px;
   position: relative;
@@ -180,12 +197,12 @@
 .section__palette__lien__carte__nouveau, .section__note__lien__carte__nouveau {
   position: absolute;
   /*a voir avec julien text deco qui ne marche pas*/
-  top: 50px;
+  top: 40px;
   right: 50px;
   text-decoration: none;
   outline: none;
   color: green;
-  background-color: #11da2c;
+  background-color: #99E2D0;
   padding: 10px 20px;
   border-radius: 5px;
   font-size: 20px;
@@ -204,9 +221,12 @@
   margin: 10px 0 16px 20px;
 }
 
-.section {
+
     .fa-heart {
-        /*pb avec le coeur de la palette du gout*/
+        /*pb avec le coeur de la palette du gout
+        en retirant l'imbrication section{ avant fa_heart, le
+        coeur de la palette a bougé mais cela est tjrs incorect
+        */
         position: absolute;
         bottom: 50px;
         right: 50px;
@@ -214,7 +234,7 @@
         color: black;
         font-weight: 300;
     }
-}
+
 
 
 .footer {
