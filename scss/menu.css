@@ -1,27 +1,23 @@
 @charset "UTF-8";
 .body {
-  font-family: 'roboto';
+  font-family: "roboto";
 }
 
 .menu__nomrestaurant {
-  font-family: 'Shrikhand' !important;
+  font-family: "Shrikhand" !important;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   margin: 0 20px 0 20px;
 }
 
+.coeur {
+  font-size: 30px;
+}
+
 .header {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
   position: relative;
 }
 
@@ -52,12 +48,8 @@
 }
 
 .menu__titre {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  justify-content: space-evenly;
   font-size: 30px;
   padding: 40px 0 0 0;
 }
@@ -82,47 +74,34 @@
 
 @keyframes fade {
   from {
-    -webkit-transform: translatey(30px);
-            transform: translatey(30px);
+    transform: translatey(30px);
     opacity: 0;
   }
   to {
-    -webkit-transform: translatey(0px);
-            transform: translatey(0px);
+    transform: translatey(0px);
     opacity: 1;
   }
 }
-
 @-webkit-keyframes fade {
   from {
-    -webkit-transform: translatey(30px);
-            transform: translatey(30px);
+    transform: translatey(30px);
     opacity: 0;
   }
   to {
-    -webkit-transform: translatey(0px);
-            transform: translatey(0px);
+    transform: translatey(0px);
     opacity: 1;
   }
 }
-
 .entrees__carte, .plats__carte, .desserts__carte {
   background-color: white;
   border-radius: 25px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-bottom: 20px;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   padding: 10px;
-  -webkit-box-align: last baseline;
-      -ms-flex-align: last baseline;
-          align-items: last baseline;
+  align-items: last baseline;
   font-size: 20px;
-  -webkit-box-shadow: 0 0 30px #0000002e;
-          box-shadow: 0 0 30px #0000002e;
+  box-shadow: 0 0 30px #0000002e;
   -webkit-animation: fade 1s;
   animation: fade 1s;
 }
@@ -155,56 +134,54 @@
 
 /*ajout des keyframes ici pour prix check*/
 .prix__check {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color: #99e2d0;
   color: #fff;
-  cursor: pointer;
-  text-align: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  position: relative;
-  left: 30px;
-  border: 8px solid #99e2d0;
-  /*je bottte en touche*/
+  cursor: -webkit-grab;
+  cursor: grab;
+  position: absolute;
+  right: 0;
+  top: 265px;
+  left: 1160px;
+  bottom: 931px;
+  visibility: hidden;
 }
 
-.prix__check:hover {
-  translate: -30px 0px;
+/*pb: ne s'adapte pas à tous les écrans ie smartphone, le check disparaît.*/
+.entrees__carte:hover, .plats__carte:hover, .desserts__carte:hover {
+  box-shadow: #90A6A6 5px 5px 5px 5px;
+  background-color: #f6f6f6;
+  cursor: -webkit-grab;
+  cursor: grab;
 }
-
-.entrees__carte__menu__prix:hover {
-  -webkit-transform: translateX(-50px);
-          transform: translateX(-50px);
-  -webkit-transition-duration: 2000ms;
-          transition-duration: 2000ms;
+.entrees__carte:hover .entrees__carte__menu__prix, .plats__carte:hover .entrees__carte__menu__prix, .desserts__carte:hover .entrees__carte__menu__prix {
+  transform: translateX(-50px);
+  transition-duration: 2000ms;
+}
+.entrees__carte:hover .prix__check, .plats__carte:hover .prix__check, .desserts__carte:hover .prix__check {
+  translate: -80px 0px;
+  visibility: visible;
 }
 
 .commander {
   display: block;
-  background: -webkit-gradient(linear, left top, left bottom, from(#9e2c8f), to(#e470da));
   background: linear-gradient(#9e2c8f, #e470da);
   margin: auto;
   padding: 20px 60px;
   font-size: 25px;
   color: white;
   border-radius: 55px;
-  -webkit-box-shadow: 0px 0px 7px 1px #000000;
   box-shadow: 0px 0px 7px 1px #000000;
 }
 
 .commander:hover {
   cursor: -webkit-grab;
   cursor: grab;
-  -webkit-box-shadow: 0px 2px 15px 1px #000000;
   box-shadow: 0px 2px 15px 1px #000000;
-  background: -webkit-gradient(linear, left top, left bottom, from(#e470da), to(#ec9be6));
   background: linear-gradient(#e470da, #ec9be6);
-  -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
 }
 
-/*pour le footer, le pb sera réglé quand lien vers scss car m^me règles que pour page d'accueil*/
-/*# sourceMappingURL=menu.css.map */
+/*pour le footer, le pb sera réglé quand lien vers scss car m^me règles que pour page d'accueil*//*# sourceMappingURL=menu.css.map */

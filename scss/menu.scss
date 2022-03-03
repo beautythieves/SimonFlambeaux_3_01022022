@@ -10,7 +10,9 @@
     margin: 0 20px 0 20px;
     
   }
-  
+  .coeur{
+    font-size:30px;
+  }
   
   .header{
     display:flex;
@@ -134,27 +136,36 @@
 .prix__check{
   display:flex;
   align-items:center;
+  justify-content:center;
   background-color:rgb(153,226,208);
   color:#fff;
-  cursor:pointer;
-  text-align: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  position:relative;
-  left:30px;
-  border:8px solid rgb(153,226,208);/*je bottte en touche*/
+  cursor:grab;
+  position:absolute;
+  right: 0;
+top: 265px;
+left: 1160px;
+bottom: 931px;
+visibility:hidden;
 }
-
-  .prix__check:hover{
-    translate: -30px 0px;
-  }
-
-
-  .entrees__carte__menu__prix:hover{
+/*pb: ne s'adapte pas à tous les écrans ie smartphone, le check disparaît.*/
+  
+.entrees__carte:hover, .plats__carte:hover, .desserts__carte:hover{
+  box-shadow: #90A6A6 5px 5px 5px 5px;
+  background-color: #f6f6f6;
+  cursor:grab;
+    .entrees__carte__menu__prix{
     transform:translateX(-50px);
     transition-duration: 2000ms;
+    }
+      .prix__check{
+      translate: -80px 0px;
+      visibility:visible;
+      }      
+}
+
+
+
   
-  }
   
   .commander{
     display:block;

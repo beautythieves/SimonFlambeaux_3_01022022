@@ -1,10 +1,17 @@
-@charset "UTF-8";
-.body {
-  font-family: 'roboto';
+.loading__spiner {
+  border-top: 20px solid #9356DC;
+  border-bottom: 20px solid #FF79DA;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
 }
 
-.header__index__reservez, .main__titre, .section__titre {
-  font-family: 'Shirkhand' !important;
+.body {
+  font-family: "roboto";
+}
+
+.main__titre, .section__titre {
+  font-family: "Shirkhand" !important;
   height: 100%;
 }
 
@@ -28,11 +35,7 @@
 }
 
 .header__index__logo, .header__index__localisation {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
 }
 
@@ -42,8 +45,9 @@
 }
 
 .header__index__reservez > p {
-  font-size: 34px;
-  font-weight: 900;
+  font-size: 35px;
+  color: black;
+  font-weight: bolder;
   margin: 20px 70px;
   text-align: center;
 }
@@ -56,12 +60,8 @@
 }
 
 .header__index__explorez {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  justify-content: center;
 }
 
 .header__index__explorez > button {
@@ -74,15 +74,11 @@
   padding: 15px 20px;
   color: #fff;
   cursor: pointer;
-  -webkit-box-shadow: 0px 9px 15px -3px #90A6A6;
   box-shadow: 0px 9px 15px -3px #90A6A6;
-  background: -webkit-gradient(linear, left top, left bottom, from(#9e2c8f), to(#e470da));
   background: linear-gradient(#9e2c8f, #e470da);
 }
-
 .header__index__explorez > button:hover {
   opacity: 0.8;
-  -webkit-box-shadow: 0px 9px 15px 5px #90A6A6;
   box-shadow: 0px 9px 15px 5px #90A6A6;
 }
 
@@ -92,27 +88,16 @@
 }
 
 .main, .header__slogan {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
   align-items: center;
 }
 
 .main__choisissez, .main__composez, .main__degustez {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
   margin: 30px;
   background-color: #f1eded;
-  -webkit-box-shadow: 7px 5px 5px -1px #90A6A6;
   box-shadow: 7px 5px 5px -1px #90A6A6;
   padding: 20px;
   border-radius: 50px;
@@ -120,27 +105,18 @@
   width: 70%;
   position: relative;
 }
-
 .main__choisissez:hover, .main__composez:hover, .main__degustez:hover {
-  -webkit-box-shadow: #90A6A6 5px 5px 5px 5px;
-          box-shadow: #90A6A6 5px 5px 5px 5px;
+  box-shadow: #90A6A6 5px 5px 5px 5px;
   background-color: #f6f6f6;
+}
+.main__choisissez:hover .main__icon, .main__composez:hover .main__icon, .main__degustez:hover .main__icon {
   color: #9356DC;
-  /*comment cibler uniquement les icones 
-      lorsque hover car le changement se produit sur le bouton
-      pointer  events?*/
 }
 
 .main__nombre {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
   width: 30px;
   background: #9356DC;
   color: white;
@@ -164,19 +140,14 @@
 }
 
 .section {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
   background-color: #f1eded;
 }
 
 .section .section__titre {
   font-size: 40px;
-  margin: 20px 0 20px 20px;
+  margin: 60px 0 20px 20px;
 }
 
 .section__palette, .section__note, .section__french, .section__delice {
@@ -231,17 +202,19 @@
   margin: 10px 0 16px 20px;
 }
 
+/* le pb du coeur la palette du gout est revenu*/
 .fa-heart {
-  /*pb avec le coeur de la palette du gout
-        en retirant l'imbrication section{ avant fa_heart, le
-        coeur de la palette a bougé mais cela est tjrs incorect
-        */
   position: absolute;
   bottom: 50px;
   right: 50px;
   font-size: 35px;
   color: black;
   font-weight: 300;
+}
+
+.fa-heart:hover {
+  font-weight: 800;
+  color: #9356DC;
 }
 
 .footer {
@@ -252,7 +225,6 @@
 
 .footer .footer__logo__img {
   height: 25px;
-  -webkit-filter: invert(1);
   filter: invert(1);
 }
 
@@ -265,8 +237,8 @@
 }
 
 .fa-hands-helping {
-  -webkit-transform: rotate(345deg);
   transform: rotate(345deg);
   font-size: 15px;
 }
-/*# sourceMappingURL=index.css.map */
+
+/*# sourceMappingURL=style.css.map *//*# sourceMappingURL=index.css.map */

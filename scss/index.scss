@@ -1,14 +1,18 @@
 @charset "UTF-8";
 
 .loading__spiner{
-  
+  border-top:20px solid  #9356DC;
+  border-bottom: 20px solid #FF79DA;
+  border-radius: 50%;
+  width:100px;
+  height:100px;
 }
 
 .body {
   font-family: 'roboto';
 }
 
-.header__index__reservez, .main__titre, .section__titre {
+.main__titre, .section__titre {
   font-family: 'Shirkhand' !important;
   height: 100%;
 }
@@ -47,8 +51,9 @@
 }
 
 .header__index__reservez > p {
-  font-size: 34px;
-  font-weight: 900;
+  font-size: 35px;
+  color:black;
+  font-weight: bolder;
   margin: 20px 70px;
   text-align: center;
 }
@@ -86,6 +91,7 @@
 
 }
 
+
 .fonctionnement {
   margin: 80px 0 20px 20px;
   font-weight: 1000;
@@ -121,9 +127,9 @@
     &:hover{
       box-shadow: #90A6A6 5px 5px 5px 5px;
       background-color: #f6f6f6;
-      color:#9356DC;/*comment cibler uniquement les icones 
-      lorsque hover car le changement se produit sur le bouton
-      pointer  events?*/
+      .main__icon{
+        color:#9356DC;
+      }      
     }
 }
 
@@ -166,7 +172,7 @@
 
 .section .section__titre {
   font-size: 40px;
-  margin:20px 0 20px 20px;
+  margin:60px 0 20px 20px;
 }
 
 .section__palette, .section__note, .section__french, .section__delice {
@@ -221,19 +227,23 @@
   margin: 10px 0 16px 20px;
 }
 
+/* le pb du coeur la palette du gout est revenu*/
+.fa-heart {
 
-    .fa-heart {
-        /*pb avec le coeur de la palette du gout
-        en retirant l'imbrication section{ avant fa_heart, le
-        coeur de la palette a bougé mais cela est tjrs incorect
-        */
-        position: absolute;
-        bottom: 50px;
-        right: 50px;
-        font-size: 35px;
-        color: black;
-        font-weight: 300;
-    }
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+    font-size: 35px;
+    color: black;
+    font-weight: 300;
+ }
+
+.fa-heart:hover{
+font-weight:800; 
+color:#9356DC;
+}
+
+
 
 
 
