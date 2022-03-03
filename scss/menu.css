@@ -11,8 +11,9 @@
   margin: 0 20px 0 20px;
 }
 
-.coeur {
+.fa-heart {
   font-size: 30px;
+  margin-top: 25px;
 }
 
 .header {
@@ -52,10 +53,6 @@
   justify-content: space-evenly;
   font-size: 30px;
   padding: 40px 0 0 0;
-}
-
-.fa-heart {
-  margin-top: 30px;
 }
 
 .entrees__titre, .plats__titre, .desserts__titre {
@@ -125,6 +122,8 @@
 
 .entrees__carte__menu__prix {
   cursor: pointer;
+  z-index: 1;
+  /*ne se supperpose pas à check*/
 }
 
 .entrees__carte__menu__prix__check {
@@ -146,7 +145,8 @@
   top: 265px;
   left: 1160px;
   bottom: 931px;
-  visibility: hidden;
+  visibility: visible;
+  z-index: 2;
 }
 
 /*pb: ne s'adapte pas à tous les écrans ie smartphone, le check disparaît.*/
