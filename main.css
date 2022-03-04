@@ -15,6 +15,69 @@
     transform: rotate(360deg);
   }
 }
+.parent__spinner {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  z-index: 999;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+  -webkit-animation-name: endspinner2;
+          animation-name: endspinner2;
+}
+
+@-webkit-keyframes endspinner {
+  from {
+    overflow: hidden;
+  }
+  to {
+    overflow: visible;
+  }
+}
+
+@keyframes endspinner {
+  from {
+    overflow: hidden;
+  }
+  to {
+    overflow: visible;
+  }
+}
+@-webkit-keyframes endspinner2 {
+  from {
+    z-index: 999;
+  }
+  to {
+    z-index: -1;
+  }
+}
+@keyframes endspinner2 {
+  from {
+    z-index: 999;
+  }
+  to {
+    z-index: -1;
+  }
+}
+@-webkit-keyframes endspinner3 {
+  from {
+    display: flex;
+  }
+  to {
+    display: none;
+  }
+}
+@keyframes endspinner3 {
+  from {
+    display: flex;
+  }
+  to {
+    display: none;
+  }
+}
 .loading__spiner {
   border: 20px solid white;
   border-top: 20px solid #9356DC;
@@ -28,13 +91,21 @@
   top: 0;
   bottom: 0;
   left: 0;
-  -webkit-animation: spin 1.2s linear infinite;
-          animation: spin 1.2s linear infinite;
+  -webkit-animation: spin 1.2s linear 5s;
+          animation: spin 1.2s linear 5s;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+  -webkit-animation-name: endspinner3;
+          animation-name: endspinner3;
 }
 
-/* ok mais où le placer dans le html?*/
 .body {
   font-family: "roboto";
+  overflow: hidden;
+  -webkit-animation-delay: 5s;
+          animation-delay: 5s;
+  -webkit-animation-name: endspinner;
+          animation-name: endspinner;
 }
 
 .main__titre, .section__titre {
@@ -364,17 +435,24 @@
   }
 }
 .entrees__carte, .plats__carte, .desserts__carte {
+  position: relative;
   background-color: white;
   border-radius: 25px;
   display: flex;
   margin-bottom: 20px;
-  justify-content: space-between;
   padding: 10px;
   align-items: last baseline;
   font-size: 20px;
   box-shadow: 0 0 30px #0000002e;
   -webkit-animation: fade 1s;
   animation: fade 1s;
+  overflow: hidden;
+}
+.entrees__carte:hover .entrees__carte__menu__prix__check, .plats__carte:hover .entrees__carte__menu__prix__check, .desserts__carte:hover .entrees__carte__menu__prix__check {
+  transform: translateX(0);
+}
+.entrees__carte:hover .entrees__carte__menu__prix, .plats__carte:hover .entrees__carte__menu__prix, .desserts__carte:hover .entrees__carte__menu__prix {
+  transform: translateX(-50px);
 }
 
 .entrees__carte__menu, .plats__carte__menu, .desserts__carte__menu {
@@ -401,8 +479,19 @@
 }
 
 .entrees__carte__menu__prix__check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #99e2d0;
-  width: 0;
+  position: absolute;
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+  width: 50px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  transform: translateX(50px);
+  transition: all 0.1s ease;
 }
 
 /*ajout des keyframes ici pour prix check*/
@@ -414,7 +503,6 @@
   color: #fff;
   cursor: -webkit-grab;
   cursor: grab;
-  position: absolute;
   right: 0;
   top: 265px;
   left: 1160px;
@@ -424,21 +512,6 @@
 }
 
 /*pb: ne s'adapte pas à tous les écrans ie smartphone, le check disparaît.*/
-.entrees__carte:hover, .plats__carte:hover, .desserts__carte:hover {
-  box-shadow: #90A6A6 5px 5px 5px 5px;
-  background-color: #f6f6f6;
-  cursor: -webkit-grab;
-  cursor: grab;
-}
-.entrees__carte:hover .entrees__carte__menu__prix, .plats__carte:hover .entrees__carte__menu__prix, .desserts__carte:hover .entrees__carte__menu__prix {
-  transform: translateX(-50px);
-  transition-duration: 2000ms;
-}
-.entrees__carte:hover .prix__check, .plats__carte:hover .prix__check, .desserts__carte:hover .prix__check {
-  translate: -80px 0px;
-  visibility: visible;
-}
-
 .commander {
   display: block;
   background: linear-gradient(#9e2c8f, #e470da);

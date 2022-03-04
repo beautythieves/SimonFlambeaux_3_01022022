@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @-webkit-keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -15,6 +14,16 @@
     transform: rotate(360deg);
   }
 }
+.parent__spinner {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  z-index: 999;
+}
+
 .loading__spiner {
   border: 20px solid white;
   border-top: 20px solid #9356DC;
@@ -28,13 +37,13 @@
   top: 0;
   bottom: 0;
   left: 0;
-  -webkit-animation: spin 1.2s linear infinite;
-          animation: spin 1.2s linear infinite;
+  -webkit-animation: spin 1.2s linear 5s;
+          animation: spin 1.2s linear 5s;
 }
 
-/* ok mais où le placer dans le html?*/
 .body {
   font-family: "roboto";
+  overflow: hidden;
 }
 
 .main__titre, .section__titre {
