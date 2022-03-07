@@ -21,7 +21,6 @@
   left: 0;
   right: 0;
   background-color: white;
-  z-index: 999;
 }
 
 .loading__spiner {
@@ -43,7 +42,7 @@
 
 .body {
   font-family: "roboto";
-  overflow: hidden;
+  /* overflow:hidden*/
 }
 
 .main__titre, .section__titre {

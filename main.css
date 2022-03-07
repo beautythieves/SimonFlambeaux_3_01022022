@@ -22,62 +22,8 @@
   left: 0;
   right: 0;
   background-color: white;
-  z-index: 999;
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
-  -webkit-animation-name: endspinner2;
-          animation-name: endspinner2;
 }
 
-@-webkit-keyframes endspinner {
-  from {
-    overflow: hidden;
-  }
-  to {
-    overflow: visible;
-  }
-}
-
-@keyframes endspinner {
-  from {
-    overflow: hidden;
-  }
-  to {
-    overflow: visible;
-  }
-}
-@-webkit-keyframes endspinner2 {
-  from {
-    z-index: 999;
-  }
-  to {
-    z-index: -1;
-  }
-}
-@keyframes endspinner2 {
-  from {
-    z-index: 999;
-  }
-  to {
-    z-index: -1;
-  }
-}
-@-webkit-keyframes endspinner3 {
-  from {
-    display: flex;
-  }
-  to {
-    display: none;
-  }
-}
-@keyframes endspinner3 {
-  from {
-    display: flex;
-  }
-  to {
-    display: none;
-  }
-}
 .loading__spiner {
   border: 20px solid white;
   border-top: 20px solid #9356DC;
@@ -93,19 +39,11 @@
   left: 0;
   -webkit-animation: spin 1.2s linear 5s;
           animation: spin 1.2s linear 5s;
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
-  -webkit-animation-name: endspinner3;
-          animation-name: endspinner3;
 }
 
 .body {
   font-family: "roboto";
-  overflow: hidden;
-  -webkit-animation-delay: 5s;
-          animation-delay: 5s;
-  -webkit-animation-name: endspinner;
-          animation-name: endspinner;
+  /* overflow:hidden*/
 }
 
 .main__titre, .section__titre {
@@ -441,44 +379,50 @@
   display: flex;
   margin-bottom: 20px;
   padding: 10px;
-  align-items: last baseline;
+  justify-content: space-between;
   font-size: 20px;
   box-shadow: 0 0 30px #0000002e;
   -webkit-animation: fade 1s;
   animation: fade 1s;
   overflow: hidden;
 }
-.entrees__carte:hover .entrees__carte__menu__prix__check, .plats__carte:hover .entrees__carte__menu__prix__check, .desserts__carte:hover .entrees__carte__menu__prix__check {
+.entrees__carte:hover .entrees__carte__menu__prix__check, .entrees__carte:hover .plats__carte__menu__prix__check, .entrees__carte:hover .desserts__carte__menu__prix__check, .plats__carte:hover .entrees__carte__menu__prix__check, .plats__carte:hover .plats__carte__menu__prix__check, .plats__carte:hover .desserts__carte__menu__prix__check, .desserts__carte:hover .entrees__carte__menu__prix__check, .desserts__carte:hover .plats__carte__menu__prix__check, .desserts__carte:hover .desserts__carte__menu__prix__check {
   transform: translateX(0);
 }
-.entrees__carte:hover .entrees__carte__menu__prix, .plats__carte:hover .entrees__carte__menu__prix, .desserts__carte:hover .entrees__carte__menu__prix {
+.entrees__carte:hover .entrees__carte__menu__prix, .entrees__carte:hover .plats__carte__menu__prix, .entrees__carte:hover .desserts__carte__menu__prix, .plats__carte:hover .entrees__carte__menu__prix, .plats__carte:hover .plats__carte__menu__prix, .plats__carte:hover .desserts__carte__menu__prix, .desserts__carte:hover .entrees__carte__menu__prix, .desserts__carte:hover .plats__carte__menu__prix, .desserts__carte:hover .desserts__carte__menu__prix {
   transform: translateX(-50px);
 }
 
 .entrees__carte__menu, .plats__carte__menu, .desserts__carte__menu {
-  margin: 0;
-  /*inutile*/
+  overflow: hidden;
 }
 
 .entrees__carte__menu__plat, .plats__carte__menu__plat, .desserts__carte__menu__plat {
   margin: 0;
   font-weight: 900;
   /* pb ici, le font weight est au max mais n'est tjrs pas assez gras/maquette*/
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 .entrees__carte__menu__accompagnement, .plats__carte__menu__accompagnement, .desserts__carte__menu__accompagnement {
   margin: 5px 0 5px 0;
   font-size: smaller;
   font-weight: lighter;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
-.entrees__carte__menu__prix {
+.entrees__carte__menu__prix, .plats__carte__menu__prix, .desserts__carte__menu__prix {
   cursor: pointer;
-  z-index: 1;
-  /*ne se supperpose pas à check*/
+  position: relative;
+  top: 25px;
+  font-weight: 700 !important;
 }
 
-.entrees__carte__menu__prix__check {
+.entrees__carte__menu__prix__check, .plats__carte__menu__prix__check, .desserts__carte__menu__prix__check {
   display: flex;
   justify-content: center;
   align-items: center;
