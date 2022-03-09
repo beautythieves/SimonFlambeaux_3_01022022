@@ -8,7 +8,7 @@
     transform: rotate(360deg);
   }
 }
-
+/*loading ne marche pas*/
 .parent__spinner{
     position: absolute;
     top: 0;
@@ -21,8 +21,8 @@
 
 .loading__spiner{
   border: 20px solid white;
-  border-top:20px solid  #9356DC;
-  border-bottom: 20px solid #FF79DA;
+  border-top:20px solid $couleur-primaire;
+  border-bottom: 20px solid $couleur-secondaire;
   border-radius: 50%;
   width:100px;
   height:100px;
@@ -38,8 +38,12 @@
 .body {
   font-family: 'roboto';
   /* overflow:hidden*/
-  
+  @media ($desktop){color:red;
+  }
 }
+
+/*comment faire pour les medias queries definit dans responsive. scss?
+@media $mobile? quelle syntaxe?*/
 
 .main__titre, .section__titre {
   font-family: 'Shirkhand' !important;
@@ -157,7 +161,7 @@
       box-shadow: #90A6A6 5px 5px 5px 5px;
       background-color: #f6f6f6;
       .main__icon{
-        color:#9356DC;
+        color:$couleur-primaire;
       }      
     }
 }
@@ -167,7 +171,7 @@
   justify-content: center;
   align-items:center;
   width: 30px;
-  background: #9356DC;
+  background: $couleur-primaire;
   color:white;
   height: 30px;
   border-radius: 100%;
@@ -273,7 +277,7 @@
 
 .coeur:hover{
 font-weight:800; 
-color:#9356DC;
+color:$couleur-primaire;
 
 }
 
