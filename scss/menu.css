@@ -152,7 +152,7 @@
   bottom: 0;
   right: 0;
   transform: translateX(50px);
-  transition: all 0.1s ease;
+  transition: all 0.8s ease;
 }
 
 /*ajout des keyframes ici pour prix check*/
@@ -170,6 +170,8 @@
   bottom: 931px;
   visibility: visible;
   z-index: 2;
+  transform: rotate(360deg);
+  transition: transform 800ms;
 }
 
 /*pb: ne s'adapte pas à tous les écrans ie smartphone, le check disparaît.*/
