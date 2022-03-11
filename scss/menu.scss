@@ -157,10 +157,10 @@ overflow:hidden;
     bottom: 0;
     right: 0;
     transform: translateX(50px);
-    transition: all 0.8s ease;
+    transition: all 1s;
+    
   }
 
- /*ajout des keyframes ici pour prix check*/
 
 .prix__check{
   display:flex;
@@ -169,17 +169,10 @@ overflow:hidden;
   background-color:rgb(153,226,208);
   color:#fff;
   cursor:grab;
-  right: 0;
-  top: 265px;
-  left: 1160px;
-  bottom: 931px;
-  visibility:visible;
-  z-index: 2;
   transform:rotate(360deg);
-  transition: transform 800ms;
-
+  transition:transform 1s;
+  
 }
-/*pb: ne s'adapte pas à tous les écrans ie smartphone, le check disparaît.*/
   
   
   
@@ -201,10 +194,7 @@ overflow:hidden;
     background: linear-gradient(rgb(228,112,218), rgb(236,155,230));
     transition: all 1s ease-in-out;
   }
-  .commander__bouton{
-
-  }
   
-  /*pour le footer, le pb sera réglé quand lien vers scss car m^me règles que pour page d'accueil*/
+  
   
   

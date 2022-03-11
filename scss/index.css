@@ -1,20 +1,91 @@
+@charset "UTF-8";
 @-webkit-keyframes spin {
   0% {
     transform: rotate(0deg);
+    visibility: visible;
   }
-  100% {
+  50% {
+    transform: rotate(180deg);
+    visibility: visible;
+  }
+  to {
     transform: rotate(360deg);
+    visibility: hidden;
+    display: none;
+    height: 0;
+    width: 0;
   }
 }
 @keyframes spin {
   0% {
     transform: rotate(0deg);
+    visibility: visible;
   }
-  100% {
+  50% {
+    transform: rotate(180deg);
+    visibility: visible;
+  }
+  to {
     transform: rotate(360deg);
+    visibility: hidden;
+    display: none;
+    height: 0;
+    width: 0;
   }
 }
-/*loading ne marche pas*/
+@-webkit-keyframes fade {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    z-index: -100;
+    display: none;
+    height: 0;
+    width: 0;
+    -webkit-clip-path: circle(0);
+            clip-path: circle(0);
+    /* rognage de la totalité donc disparition*/
+  }
+}
+@keyframes fade {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    z-index: -100;
+    display: none;
+    height: 0;
+    width: 0;
+    -webkit-clip-path: circle(0);
+            clip-path: circle(0);
+    /* rognage de la totalité donc disparition*/
+  }
+}
+@-webkit-keyframes monanim {
+  from {
+    overflow: hidden;
+  }
+  to {
+    overflow: visible;
+  }
+}
+@keyframes monanim {
+  from {
+    overflow: hidden;
+  }
+  to {
+    overflow: visible;
+  }
+}
+.body {
+  -webkit-animation: monanim;
+          animation: monanim;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
 .parent__spinner {
   position: absolute;
   top: 0;
@@ -22,32 +93,51 @@
   left: 0;
   right: 0;
   background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  -webkit-animation: fade;
+          animation: fade;
+  -webkit-animation-duration: 0s;
+          animation-duration: 0s;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .loading__spiner {
+  /*création du loader*/
   border: 20px solid white;
   border-top: 20px solid #9356DC;
   border-bottom: 20px solid #FF79DA;
   border-radius: 50%;
+  /*arrondi des angles*/
   width: 100px;
   height: 100px;
   margin: auto;
+  /*placement milieu de page*/
   position: absolute;
   right: 0;
   top: 0;
   bottom: 0;
   left: 0;
-  -webkit-animation: spin 1.2s linear 5s;
-          animation: spin 1.2s linear 5s;
+  -webkit-animation-name: spin;
+          animation-name: spin;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .body {
   font-family: "roboto";
-  /* overflow:hidden*/
 }
 
-/*comment faire pour les medias queries definit dans responsive. scss?
-@media $mobile? quelle syntaxe?*/
 .main__titre, .section__titre {
   font-family: "Shirkhand" !important;
   height: 100%;
@@ -197,13 +287,7 @@
 }
 
 .section__palette__lien, .section__note__lien, .section__french__lien, .section__delice__lien {
-  /*cela ne amrche pas*/
   text-decoration: none;
-}
-
-.section__palette__lien__carte {
-  position: relative;
-  /*marche pas help!*/
 }
 
 .section__palette__lien__carte__img, .section__note__lien__carte__img, .section__french__lien__carte__img, .section__delice__lien__carte__img {
@@ -243,7 +327,6 @@
   color: black;
 }
 
-/* le pb du coeur la palette du gout est revenu*/
 .coeur {
   position: absolute;
   bottom: 50px;

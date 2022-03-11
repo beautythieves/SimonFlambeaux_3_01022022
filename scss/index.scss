@@ -1,27 +1,54 @@
 @charset "UTF-8";
+@import './variables.scss';
 
 @keyframes spin {
-  0% {
-    transform: rotate(0deg);
-    opacity:1;
-  }
-  100% {
-    transform: rotate(360deg);
-    opacity:0;
+    0% {
+      transform: rotate(0deg);
+      visibility:visible;
+    }
+    50%{
+      transform: rotate(180deg);
+      visibility:visible;
+    }
+    to {
+      transform: rotate(360deg);
+      visibility:hidden;
+      display:none;
+      height:0;
+      width:0;
+
   }
 }
 
 @keyframes fade {
-  0% {
+  from{
     opacity:1;
   }
-  100% {
+  to{
     opacity:0;
-    visibility:hidden;
+    z-index:-100;
+    display:none;
+    height:0;
+    width:0;
+    clip-path:circle(0);/* rognage de la totalité donc disparition*/
   }
+   }
+
+@keyframes monanim {
+from{
+  overflow:hidden;
+}
+to{
+  overflow:visible;
+}
+ }
+
+
+.body {
+  animation: monanim;
+  animation-duration: 3s;
 }
 
-/*loading ne marche pas*/
 .parent__spinner{
     position: absolute;
     top: 0;
@@ -35,9 +62,13 @@
     z-index: 1000;
     height: 100%;
     width: 100%;
-    animation: fade 0.2s 3s forwards;
+    opacity:1;
+    animation: fade;
+    animation-duration: 0s;
+    animation-delay:3s;
+    animation-fill-mode: forwards;
     }
-}
+
 
 .loading__spiner{/*création du loader*/
   border: 20px solid white;
@@ -52,20 +83,17 @@
   top:0;
   bottom:0;
   left:0;
-  animation: spin 1.2s linear 5s;
-  animation-fill-mode: forwards;
+  animation-name:spin;
+  animation-duration:3s;
+  animation-fill-mode:forwards;
 }
 
 .body {
   font-family: 'roboto';
-  /* overflow:hidden*/
-  @media ($desktop){
-    color:red;
-  }
+    
 }
 
-/*comment faire pour les medias queries definit dans responsive. scss?
-@media $mobile? quelle syntaxe?*/
+
 
 .main__titre, .section__titre {
   font-family: 'Shirkhand' !important;
