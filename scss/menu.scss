@@ -1,5 +1,5 @@
 .body{
-    font-family:'roboto';
+    font-family:'roboto', sans-serif;
   }
   
   .menu__nomrestaurant {
@@ -112,6 +112,9 @@
       .entrees__carte__menu__prix, .plats__carte__menu__prix, .desserts__carte__menu__prix {
         transform: translateX(-50px);
       }
+      .prix__check{
+        transform:rotate(360deg);
+      }
     }
   }
   
@@ -121,7 +124,7 @@ overflow:hidden;
   
   .entrees__carte__menu__plat, .plats__carte__menu__plat, .desserts__carte__menu__plat{
       margin:0;
-      font-weight :900;/* pb ici, le font weight est au max mais n'est tjrs pas assez gras/maquette*/
+      font-weight :1000;/* pb ici, le font weight est au max mais n'est tjrs pas assez gras/maquette*/
       overflow:hidden;
       white-space:nowrap;
       text-overflow:ellipsis;
@@ -129,8 +132,8 @@ overflow:hidden;
   
   .entrees__carte__menu__accompagnement, .plats__carte__menu__accompagnement, .desserts__carte__menu__accompagnement{
     margin:5px 0 5px 0;
-    font-size:smaller;
-    font-weight: lighter;
+    font-size:16px;
+    font-weight: 400;
     overflow:hidden;
     text-overflow:ellipsis;
     white-space:nowrap;
@@ -141,7 +144,7 @@ overflow:hidden;
     cursor:pointer;
     position:relative;
     top:25px;
-    font-weight:700 !important;
+    font-weight:1000 !important;
   }
   
   .entrees__carte__menu__prix__check, .plats__carte__menu__prix__check, .desserts__carte__menu__prix__check{
@@ -169,9 +172,8 @@ overflow:hidden;
   background-color:rgb(153,226,208);
   color:#fff;
   cursor:grab;
-  transform:rotate(360deg);
-  transition:transform 1s;
-  
+  transition:all 1.5s ease-in-out;
+
 }
   
   

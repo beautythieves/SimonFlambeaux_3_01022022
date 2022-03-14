@@ -1,12 +1,16 @@
 .body {
-  font-family: "roboto";
+  font-family: 'roboto', sans-serif;
 }
 
 .menu__nomrestaurant {
-  font-family: "Shrikhand" !important;
+  font-family: 'Shrikhand' !important;
   height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin: 0 20px 0 20px;
 }
 
@@ -16,8 +20,12 @@
 }
 
 .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: relative;
 }
 
@@ -48,8 +56,12 @@
 }
 
 .menu__titre {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-evenly;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
   font-size: 30px;
   padding: 40px 0 0 0;
 }
@@ -70,43 +82,63 @@
 
 @keyframes fade {
   from {
-    transform: translatey(30px);
+    -webkit-transform: translatey(30px);
+            transform: translatey(30px);
     opacity: 0;
   }
   to {
-    transform: translatey(0px);
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
     opacity: 1;
   }
 }
+
 @-webkit-keyframes fade {
   from {
-    transform: translatey(30px);
+    -webkit-transform: translatey(30px);
+            transform: translatey(30px);
     opacity: 0;
   }
   to {
-    transform: translatey(0px);
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
     opacity: 1;
   }
 }
+
 .entrees__carte, .plats__carte, .desserts__carte {
   position: relative;
   background-color: white;
   border-radius: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   margin-bottom: 20px;
   padding: 10px;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   font-size: 20px;
-  box-shadow: 0 0 30px #0000002e;
+  -webkit-box-shadow: 0 0 30px #0000002e;
+          box-shadow: 0 0 30px #0000002e;
   -webkit-animation: fade 1s;
   animation: fade 1s;
   overflow: hidden;
 }
+
 .entrees__carte:hover .entrees__carte__menu__prix__check, .entrees__carte:hover .plats__carte__menu__prix__check, .entrees__carte:hover .desserts__carte__menu__prix__check, .plats__carte:hover .entrees__carte__menu__prix__check, .plats__carte:hover .plats__carte__menu__prix__check, .plats__carte:hover .desserts__carte__menu__prix__check, .desserts__carte:hover .entrees__carte__menu__prix__check, .desserts__carte:hover .plats__carte__menu__prix__check, .desserts__carte:hover .desserts__carte__menu__prix__check {
-  transform: translateX(0);
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
+
 .entrees__carte:hover .entrees__carte__menu__prix, .entrees__carte:hover .plats__carte__menu__prix, .entrees__carte:hover .desserts__carte__menu__prix, .plats__carte:hover .entrees__carte__menu__prix, .plats__carte:hover .plats__carte__menu__prix, .plats__carte:hover .desserts__carte__menu__prix, .desserts__carte:hover .entrees__carte__menu__prix, .desserts__carte:hover .plats__carte__menu__prix, .desserts__carte:hover .desserts__carte__menu__prix {
-  transform: translateX(-50px);
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+}
+
+.entrees__carte:hover .prix__check, .plats__carte:hover .prix__check, .desserts__carte:hover .prix__check {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 .entrees__carte__menu, .plats__carte__menu, .desserts__carte__menu {
@@ -115,7 +147,7 @@
 
 .entrees__carte__menu__plat, .plats__carte__menu__plat, .desserts__carte__menu__plat {
   margin: 0;
-  font-weight: 900;
+  font-weight: 1000;
   /* pb ici, le font weight est au max mais n'est tjrs pas assez gras/maquette*/
   overflow: hidden;
   white-space: nowrap;
@@ -124,8 +156,8 @@
 
 .entrees__carte__menu__accompagnement, .plats__carte__menu__accompagnement, .desserts__carte__menu__accompagnement {
   margin: 5px 0 5px 0;
-  font-size: smaller;
-  font-weight: lighter;
+  font-size: 16px;
+  font-weight: 400;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -135,13 +167,19 @@
   cursor: pointer;
   position: relative;
   top: 25px;
-  font-weight: 700 !important;
+  font-weight: 1000 !important;
 }
 
 .entrees__carte__menu__prix__check, .plats__carte__menu__prix__check, .desserts__carte__menu__prix__check {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background-color: #99e2d0;
   position: absolute;
   border-bottom-right-radius: 25px;
@@ -150,37 +188,51 @@
   top: 0;
   bottom: 0;
   right: 0;
-  transform: translateX(50px);
+  -webkit-transform: translateX(50px);
+          transform: translateX(50px);
+  -webkit-transition: all 1s;
   transition: all 1s;
 }
 
 .prix__check {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #99e2d0;
   color: #fff;
   cursor: -webkit-grab;
   cursor: grab;
-  transform: rotate(360deg);
-  transition: transform 1s;
+  -webkit-transition: all 1.5s ease-in-out;
+  transition: all 1.5s ease-in-out;
 }
 
 .commander {
   display: block;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9e2c8f), to(#e470da));
   background: linear-gradient(#9e2c8f, #e470da);
   margin: auto;
   padding: 20px 60px;
   font-size: 25px;
   color: white;
   border-radius: 55px;
+  -webkit-box-shadow: 0px 0px 7px 1px #000000;
   box-shadow: 0px 0px 7px 1px #000000;
 }
 
 .commander:hover {
   cursor: -webkit-grab;
   cursor: grab;
+  -webkit-box-shadow: 0px 2px 15px 1px #000000;
   box-shadow: 0px 2px 15px 1px #000000;
+  background: -webkit-gradient(linear, left top, left bottom, from(#e470da), to(#ec9be6));
   background: linear-gradient(#e470da, #ec9be6);
+  -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
-}/*# sourceMappingURL=menu.css.map */
+}
+/*# sourceMappingURL=menu.css.map */
