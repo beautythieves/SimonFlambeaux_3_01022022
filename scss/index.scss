@@ -6,11 +6,8 @@
       transform: rotate(0deg);
       overflow:hidden;
     }
-    
     100% {
       transform: rotate(360deg);
-     
-    
   }
 }
 
@@ -23,9 +20,8 @@
     display:none;
     position:relative;
     left: -9999px;
-    
   }
-   }
+}
 
 @keyframes monanim {
 0%{
@@ -45,23 +41,23 @@
 }
 
 .parent__spinner{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background-color: white;
-    display:flex;
-    justify-content:center;
-    align-items: center;
-    z-index: 1000;
-    height: 100%;
-    width: 100%;
-    animation: fondu;
-    animation-duration: 0.5s;
-    animation-delay:2.5s;
-    animation-fill-mode: forwards;
-    }
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  z-index: 1000;
+  height: 100%;
+  width: 100%;
+  animation: fondu;
+  animation-duration: 0.5s;
+  animation-delay:2.5s;
+  animation-fill-mode: forwards;
+}
 
 
 .loading__spiner{/*création du loader*/
@@ -83,11 +79,8 @@
 }
 
 .body {
-  font-family: 'roboto', sans-serif;
-    
+  font-family: 'roboto', sans-serif; 
 }
-
-
 
 .main__titre, .section__titre {
   height: 100%;
@@ -243,7 +236,6 @@
   -ms-flex-direction: column;
   flex-direction: column;
   background-color: #f1eded;
-
 }
 
 .section .section__titre {
@@ -263,8 +255,6 @@
   text-decoration: none;
 }
 
-
-
 .section__palette__lien__carte__img, .section__note__lien__carte__img, .section__french__lien__carte__img, .section__delice__lien__carte__img {
   width: 100%;
   -o-object-fit: cover;
@@ -275,7 +265,6 @@
 
 .section__palette__lien__carte__nouveau, .section__note__lien__carte__nouveau {
   position: absolute;
-  /*a voir avec julien text deco qui ne marche pas*/
   top: 40px;
   right: 50px;
   text-decoration: none;
@@ -293,7 +282,7 @@
   font-size: 26px;
   font-weight: 600;
   color: black;
-  margin: 0 0 0 20px;
+  margin: 20px 0 0 20px;
 }
 
 .section__palette__lien__carte__intitule__lieu, .section__note__lien__carte__intitule__lieu, .section__french__lien__carte__intitule__lieu, .section__delice__lien__carte__intitule__lieu {
@@ -303,30 +292,28 @@
 }
 
 .coeur {
-
-    position: absolute;
-    bottom: 50px;
-    right: 50px;
-    font-size: 35px;
-    color: black;
-    font-weight: 300;
-    transition:2.5s;
+  position: absolute;
+  bottom: 40px;
+  right: 50px;
+  font-size: 40px!important;
+  color: black;
+  font-weight: 300;
+  transition:2.5s;
  }
 
 .coeur:hover{
 font-weight:800; 
 color:$couleur-primaire;
-
 }
-
-
-
-
 
 .footer {
   background-color: #3d3434;
   padding: 20px 0 30px 20px;
   color: white;
+}
+
+.footer__logo{
+  margin:20px 0 20px 10px;
 }
 
 .footer .footer__logo__img {
@@ -337,6 +324,11 @@ color:$couleur-primaire;
 
 .footer__proposer, .footer__devenir, .footer__mentions, .footer__contact {
   margin: 10px;
+}
+
+a[href="mailto@ohmyfood.com"]{
+  text-decoration:none;
+  color:white;
 }
 
 .fa-utensils {

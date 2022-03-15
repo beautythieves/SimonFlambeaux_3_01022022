@@ -330,7 +330,6 @@
 
 .section__palette__lien__carte__nouveau, .section__note__lien__carte__nouveau {
   position: absolute;
-  /*a voir avec julien text deco qui ne marche pas*/
   top: 40px;
   right: 50px;
   text-decoration: none;
@@ -348,7 +347,7 @@
   font-size: 26px;
   font-weight: 600;
   color: black;
-  margin: 0 0 0 20px;
+  margin: 20px 0 0 20px;
 }
 
 .section__palette__lien__carte__intitule__lieu, .section__note__lien__carte__intitule__lieu, .section__french__lien__carte__intitule__lieu, .section__delice__lien__carte__intitule__lieu {
@@ -359,9 +358,9 @@
 
 .coeur {
   position: absolute;
-  bottom: 50px;
+  bottom: 40px;
   right: 50px;
-  font-size: 35px;
+  font-size: 40px !important;
   color: black;
   font-weight: 300;
   -webkit-transition: 2.5s;
@@ -379,6 +378,10 @@
   color: white;
 }
 
+.footer__logo {
+  margin: 20px 0 20px 10px;
+}
+
 .footer .footer__logo__img {
   height: 25px;
   -webkit-filter: invert(1);
@@ -387,6 +390,11 @@
 
 .footer__proposer, .footer__devenir, .footer__mentions, .footer__contact {
   margin: 10px;
+}
+
+a[href="mailto@ohmyfood.com"] {
+  text-decoration: none;
+  color: white;
 }
 
 .fa-utensils {
