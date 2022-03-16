@@ -207,8 +207,8 @@
   color: #fff;
   cursor: -webkit-grab;
   cursor: grab;
-  -webkit-transition: all 1.5s ease-in-out;
-  transition: all 1.5s ease-in-out;
+  -webkit-transition: all 0.7s ease-in-out;
+  transition: all 0.7s ease-in-out;
 }
 
 .commander {
