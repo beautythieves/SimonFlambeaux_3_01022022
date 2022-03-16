@@ -122,7 +122,7 @@
   
 .entrees__carte__menu__plat, .plats__carte__menu__plat, .desserts__carte__menu__plat{
   margin:0;
-  font-weight :1000;/* pb ici, le font weight est au max mais n'est tjrs pas assez gras/maquette*/
+  font-weight :1000;
   overflow:hidden;
   white-space:nowrap;
   text-overflow:ellipsis;
@@ -168,7 +168,7 @@
   background-color:rgb(153,226,208);
   color:#fff;
   cursor:grab;
-  transition:all 1.5s ease-in-out;
+  transition:all 0.7s ease-in-out;
 }
   
 .commander{

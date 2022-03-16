@@ -24,16 +24,15 @@
 }
 
 @keyframes monanim {
-0%{
-  overflow:hidden;
-  visibility:hidden;}
+  0%{
+    overflow:hidden;
+    visibility:hidden;}
 
-100%{
-  overflow:visible;
-  visibility:visible;
+  100%{
+    overflow:visible;
+    visibility:visible;
+  }
 }
- }
-
 
 .body {
   animation: monanim;
