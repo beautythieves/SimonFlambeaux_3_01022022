@@ -134,8 +134,6 @@
 .entrees__carte:hover .entrees__carte__menu__prix, .entrees__carte:hover .plats__carte__menu__prix, .entrees__carte:hover .desserts__carte__menu__prix, .plats__carte:hover .entrees__carte__menu__prix, .plats__carte:hover .plats__carte__menu__prix, .plats__carte:hover .desserts__carte__menu__prix, .desserts__carte:hover .entrees__carte__menu__prix, .desserts__carte:hover .plats__carte__menu__prix, .desserts__carte:hover .desserts__carte__menu__prix {
   -webkit-transform: translateX(-50px);
           transform: translateX(-50px);
-  -webkit-transition: all 3s ease-in-out;
-  transition: all 3s ease-in-out;
 }
 
 .entrees__carte:hover .prix__check, .plats__carte:hover .prix__check, .desserts__carte:hover .prix__check {
@@ -169,6 +167,8 @@
   position: relative;
   top: 25px;
   font-weight: 1000 !important;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 
 .entrees__carte__menu__prix__check, .plats__carte__menu__prix__check, .desserts__carte__menu__prix__check {

@@ -234,6 +234,48 @@
   align-items: center;
 }
 
+@media screen and (min-width: 768px) {
+  .fonctionnement {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .main, .section {
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    margin: auto;
+  }
+  .footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    margin: auto;
+  }
+}
+
 .main__choisissez, .main__composez, .main__degustez {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -356,18 +398,17 @@
   color: black;
 }
 
-.fa-heart {
+.coeur {
   position: absolute;
-  bottom: 42px;
+  bottom: 40px;
   right: 50px;
   font-size: 40px !important;
-  color: black;
   font-weight: 300;
-  -webkit-transition: 2.5s;
-  transition: 2.5s;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
-.fa-heart:hover .fa-heart::before {
+.coeur:hover i {
   font-weight: 900;
   background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
   background: linear-gradient(to bottom right, #FF79DA, #9356DC);
