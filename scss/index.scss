@@ -129,7 +129,7 @@
 
 .header__index__decouvrez {
   font-size: 26px;
-  font-weight: 500;
+  font-weight: 100;
   margin: 0 20px;
   text-align: center;
 }
@@ -290,20 +290,27 @@
   color:black;
 }
 
-.coeur {
+.fa-heart {
   position: absolute;
-  bottom: 40px;
+  bottom: 42px;
   right: 50px;
   font-size: 40px!important;
   color: black;
   font-weight: 300;
   transition:2.5s;
- }
 
-.coeur:hover{
-font-weight:800; 
-color:$couleur-primaire;
-}
+  &:hover {
+    .fa-heart::before {
+      font-weight: 900;
+    background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    transition-duration: 1s;
+    transition-timing-function: ease-in;
+    }
+  }
+ }
 
 .footer {
   background-color: #3d3434;

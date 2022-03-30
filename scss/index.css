@@ -1,0 +1,417 @@
+@charset "UTF-8";
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    overflow: hidden;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    overflow: hidden;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes fondu {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+    position: relative;
+    left: -9999px;
+  }
+}
+
+@keyframes fondu {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+    position: relative;
+    left: -9999px;
+  }
+}
+
+@-webkit-keyframes monanim {
+  0% {
+    overflow: hidden;
+    visibility: hidden;
+  }
+  100% {
+    overflow: visible;
+    visibility: visible;
+  }
+}
+
+@keyframes monanim {
+  0% {
+    overflow: hidden;
+    visibility: hidden;
+  }
+  100% {
+    overflow: visible;
+    visibility: visible;
+  }
+}
+
+.body {
+  -webkit-animation: monanim;
+          animation: monanim;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+}
+
+.parent__spinner {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1000;
+  height: 100%;
+  width: 100%;
+  -webkit-animation: fondu;
+          animation: fondu;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.loading__spiner {
+  /*création du loader*/
+  border: 20px solid white;
+  border-top: 20px solid #9356DC;
+  border-bottom: 20px solid #FF79DA;
+  border-radius: 50%;
+  /*arrondi des angles*/
+  width: 100px;
+  height: 100px;
+  margin: auto;
+  /*placement milieu de page*/
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-animation-name: spin;
+          animation-name: spin;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+.body {
+  font-family: 'roboto', sans-serif;
+}
+
+.main__titre, .section__titre {
+  height: 100%;
+  font-weight: 1000;
+}
+
+.header__index__logo {
+  height: 30px;
+  padding: 15px;
+}
+
+.header__index__localisation {
+  background-color: #e7e3e3;
+  padding: 20px 0;
+  font-size: 20px;
+}
+
+.header__index__localisation__icone {
+  margin-right: 20px;
+}
+
+.header__index__localisation__texte {
+  font-weight: 900;
+}
+
+.header__index__logo, .header__index__localisation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.header__index__slogan {
+  background-color: #f1eded;
+  padding: 25px 0 55px 0;
+}
+
+.header__index__reservez > p {
+  font-size: 35px;
+  color: black;
+  font-weight: bolder;
+  margin: 20px 70px;
+  text-align: center;
+}
+
+.header__index__decouvrez {
+  font-size: 26px;
+  font-weight: 100;
+  margin: 0 20px;
+  text-align: center;
+}
+
+.header__index__explorez {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header__index__explorez > button {
+  font-size: 20px;
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  white-space: nowrap;
+  border-radius: 40px;
+  padding: 20px 25px;
+  color: #fff;
+  cursor: pointer;
+  -webkit-box-shadow: 0px 9px 15px -3px #90A6A6;
+  box-shadow: 0px 9px 15px -3px #90A6A6;
+  background: -webkit-gradient(linear, left top, left bottom, from(#9e2c8f), to(#e470da));
+  background: linear-gradient(#9e2c8f, #e470da);
+}
+
+.header__index__explorez > button:hover {
+  opacity: 0.8;
+  -webkit-box-shadow: 0px 9px 15px 5px #90A6A6;
+  box-shadow: 0px 9px 15px 5px #90A6A6;
+}
+
+.fonctionnement {
+  margin: 80px 0 20px 20px;
+  font-weight: 1000;
+}
+
+.main, .header__slogan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.main__choisissez, .main__composez, .main__degustez {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 30px;
+  background-color: #f1eded;
+  -webkit-box-shadow: 7px 5px 5px -1px #90A6A6;
+  box-shadow: 7px 5px 5px -1px #90A6A6;
+  padding: 40px;
+  border-radius: 30px;
+  gap: 10px;
+  width: 70%;
+  position: relative;
+}
+
+.main__choisissez:hover, .main__composez:hover, .main__degustez:hover {
+  -webkit-box-shadow: #90A6A6 5px 5px 5px 5px;
+          box-shadow: #90A6A6 5px 5px 5px 5px;
+  background-color: #f6f6f6;
+}
+
+.main__choisissez:hover .main__icon, .main__composez:hover .main__icon, .main__degustez:hover .main__icon {
+  color: #9356DC;
+}
+
+.main__nombre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30px;
+  background: #9356DC;
+  color: white;
+  height: 30px;
+  border-radius: 100%;
+  margin-top: 5px;
+  position: absolute;
+  left: -20px;
+}
+
+.material-icons {
+  padding-top: 5px !important;
+  font-size: 30px !important;
+}
+
+.main__text {
+  padding-top: 10px;
+  font-size: 22px;
+  font-weight: 900;
+}
+
+.section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  background-color: #f1eded;
+}
+
+.section .section__titre {
+  font-size: 40px;
+  margin: 90px 0 20px 20px;
+}
+
+.section__palette, .section__note, .section__french, .section__delice {
+  border: 1px solid white;
+  margin: 20px;
+  border-radius: 25px;
+  position: relative;
+  background-color: white;
+}
+
+.section__palette__lien, .section__note__lien, .section__french__lien, .section__delice__lien {
+  text-decoration: none;
+}
+
+.section__palette__lien__carte__img, .section__note__lien__carte__img, .section__french__lien__carte__img, .section__delice__lien__carte__img {
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  height: 300px;
+  border-radius: 25px 25px 0 0;
+}
+
+.section__palette__lien__carte__nouveau, .section__note__lien__carte__nouveau {
+  position: absolute;
+  top: 40px;
+  right: 50px;
+  text-decoration: none;
+  outline: none;
+  color: green;
+  background-color: #99E2D0;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.section__palette__lien__carte__intitule__titre, .section__note__lien__carte__intitule__titre, .section__french__lien__carte__intitule__titre, .section__delice__lien__carte__intitule__titre {
+  text-decoration: none;
+  font-size: 26px;
+  font-weight: 600;
+  color: black;
+  margin: 20px 0 0 20px;
+}
+
+.section__palette__lien__carte__intitule__lieu, .section__note__lien__carte__intitule__lieu, .section__french__lien__carte__intitule__lieu, .section__delice__lien__carte__intitule__lieu {
+  font-size: 24px;
+  margin: 10px 0 16px 20px;
+  color: black;
+}
+
+.fa-heart {
+  position: absolute;
+  bottom: 42px;
+  right: 50px;
+  font-size: 40px !important;
+  color: black;
+  font-weight: 300;
+  -webkit-transition: 2.5s;
+  transition: 2.5s;
+}
+
+.fa-heart:hover .fa-heart::before {
+  font-weight: 900;
+  background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
+}
+
+.footer {
+  background-color: #3d3434;
+  padding: 20px 0 30px 20px;
+  color: white;
+}
+
+.footer__logo {
+  margin: 20px 0 20px 10px;
+}
+
+.footer .footer__logo__img {
+  height: 25px;
+  -webkit-filter: invert(1);
+  filter: invert(1);
+}
+
+.footer__proposer, .footer__devenir, .footer__mentions, .footer__contact {
+  margin: 10px;
+}
+
+a[href="mailto@ohmyfood.com"] {
+  text-decoration: none;
+  color: white;
+}
+
+.fa-utensils {
+  padding-right: 10px;
+}
+
+.fa-hands-helping {
+  -webkit-transform: rotate(345deg);
+  transform: rotate(345deg);
+  font-size: 15px;
+}
+/*# sourceMappingURL=index.css.map */

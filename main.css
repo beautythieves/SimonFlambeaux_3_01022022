@@ -180,7 +180,7 @@
 
 .header__index__decouvrez {
   font-size: 26px;
-  font-weight: 500;
+  font-weight: 100;
   margin: 0 20px;
   text-align: center;
 }
@@ -356,9 +356,9 @@
   color: black;
 }
 
-.coeur {
+.fa-heart {
   position: absolute;
-  bottom: 40px;
+  bottom: 42px;
   right: 50px;
   font-size: 40px !important;
   color: black;
@@ -367,9 +367,17 @@
   transition: 2.5s;
 }
 
-.coeur:hover {
-  font-weight: 800;
-  color: #9356DC;
+.fa-heart:hover .fa-heart::before {
+  font-weight: 900;
+  background: -webkit-gradient(linear, left top, right bottom, from(#FF79DA), to(#9356DC));
+  background: linear-gradient(to bottom right, #FF79DA, #9356DC);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transition-timing-function: ease-in;
+          transition-timing-function: ease-in;
 }
 
 .footer {
@@ -481,7 +489,7 @@ a[href="mailto@ohmyfood.com"] {
 
 .entrees__titre__souligne, .plats__titre__souligne, .desserts__titre__souligne {
   padding-bottom: 5px;
-  border-bottom: 3px solid #68ce68;
+  border-bottom: 3px solid #99e2d0;
 }
 
 .entrees__titre {

@@ -60,7 +60,7 @@
   
 .entrees__titre__souligne, .plats__titre__souligne, .desserts__titre__souligne{
   padding-bottom:5px;
-  border-bottom: 3px solid rgb(104, 206, 104);
+  border-bottom: 3px solid #99e2d0;
 }
 
 .entrees__titre{
@@ -109,6 +109,7 @@
 
     .entrees__carte__menu__prix, .plats__carte__menu__prix, .desserts__carte__menu__prix {
       transform: translateX(-50px);
+      
     }
     .prix__check{
       transform:rotate(360deg);
@@ -142,6 +143,7 @@
   position:relative;
   top:25px;
   font-weight:1000 !important;
+  transition: all 3s ease-in-out;
 }
   
 .entrees__carte__menu__prix__check, .plats__carte__menu__prix__check, .desserts__carte__menu__prix__check{
