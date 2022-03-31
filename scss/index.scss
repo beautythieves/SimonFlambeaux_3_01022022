@@ -187,7 +187,7 @@
   }
   
   .main, .section{
-    width:50%;
+    width:90%;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -201,6 +201,8 @@
     align-content: center;
     margin:auto;
   }
+  .section__palette__lien__carte__img, .section__note__lien__carte__img, .section__french__lien__carte__img, .section__delice__lien__carte__img {
+    height:700px;
 }
 
 .main__choisissez, .main__composez, .main__degustez {
@@ -219,7 +221,7 @@
   position:relative;
     &:hover{
       box-shadow: #90A6A6 5px 5px 5px 5px;
-      background-color: #f6f6f6;
+      background-color: rgba(147, 86, 220, 0.1);
       .main__icon{
         color:$couleur-primaire;
       }      
