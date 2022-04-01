@@ -246,7 +246,7 @@
         align-content: center;
   }
   .main, .section {
-    width: 80%;
+    width: 90%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -273,6 +273,9 @@
     -ms-flex-line-pack: center;
         align-content: center;
     margin: auto;
+  }
+  .section__palette__lien__carte__img, .section__note__lien__carte__img, .section__french__lien__carte__img, .section__delice__lien__carte__img {
+    height: 800px;
   }
 }
 

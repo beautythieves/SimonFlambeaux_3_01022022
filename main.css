@@ -246,7 +246,7 @@
         align-content: center;
   }
   .main, .section {
-    width: 80%;
+    width: 90%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -273,6 +273,9 @@
     -ms-flex-line-pack: center;
         align-content: center;
     margin: auto;
+  }
+  .section__palette__lien__carte__img, .section__note__lien__carte__img, .section__french__lien__carte__img, .section__delice__lien__carte__img {
+    height: 700px;
   }
 }
 
@@ -501,6 +504,11 @@ a[href="mailto@ohmyfood.com"] {
   .body {
     width: 80%;
     margin: auto;
+  }
+  .image__restaurant__lapalette > img, .image__restaurant__lanote > img, .image__restaurant__alafrench > img, .image__restaurant__delice > img {
+    height: 600px;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 
