@@ -275,7 +275,10 @@
     margin: auto;
   }
   .section__palette__lien__carte__img, .section__note__lien__carte__img, .section__french__lien__carte__img, .section__delice__lien__carte__img {
-    height: 700px;
+    height: 600px;
+  }
+  .section__palette, .section__note, .section__french, .section__delice {
+    margin: 40px;
   }
 }
 
@@ -458,6 +461,7 @@ a[href="mailto@ohmyfood.com"] {
   transform: rotate(345deg);
   font-size: 15px;
 }
+
 .body {
   font-family: 'roboto', sans-serif;
 }

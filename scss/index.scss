@@ -26,7 +26,8 @@
 @keyframes monanim {
   0%{
     overflow:hidden;
-    visibility:hidden;}
+    visibility:hidden;
+  }
 
   100%{
     overflow:visible;
@@ -157,7 +158,6 @@
       -webkit-box-shadow: 0px 9px 15px 5px #90A6A6; 
       box-shadow: 0px 9px 15px 5px #90A6A6;
     }
-
 }
 
 
@@ -194,6 +194,7 @@
     align-content: center;
     margin:auto;
   }
+
   .footer{
     display:flex;
     justify-content: center;
@@ -201,10 +202,16 @@
     align-content: center;
     margin:auto;
   }
+
   .section__palette__lien__carte__img, .section__note__lien__carte__img, .section__french__lien__carte__img, .section__delice__lien__carte__img {
-    height:800px;
+    height:600px;
+  }
+
+  .section__palette, .section__note, .section__french, .section__delice {
+    margin:40px;
+  }
 }
-}
+
 .main__choisissez, .main__composez, .main__degustez {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -226,7 +233,7 @@
         color:$couleur-primaire;
       }      
     }
-}
+  }
 
 .main__nombre {
   display:flex;
@@ -240,17 +247,18 @@
   margin-top:5px;
   position:absolute;
   left:-20px;
-}
+  }
+
 .material-icons{
   padding-top:5px!important;
   font-size:30px!important;
-}
+  }
 
 .main__text {
   padding-top: 10px;
   font-size:22px;
   font-weight:900;
-}
+  }
 
 .section {
   display: -webkit-box;
@@ -261,12 +269,12 @@
   -ms-flex-direction: column;
   flex-direction: column;
   background-color: #f1eded;
-}
+  }
 
 .section .section__titre {
   font-size: 40px;
   margin:90px 0 20px 20px;
-}
+  }
 
 .section__palette, .section__note, .section__french, .section__delice {
   border: 1px solid white;
@@ -274,11 +282,11 @@
   border-radius: 25px;
   position:relative;
   background-color:white;
-}
+  }
 
 .section__palette__lien, .section__note__lien, .section__french__lien, .section__delice__lien {
   text-decoration: none;
-}
+  }
 
 .section__palette__lien__carte__img, .section__note__lien__carte__img, .section__french__lien__carte__img, .section__delice__lien__carte__img {
   width: 100%;
@@ -286,7 +294,7 @@
      object-fit: cover;
   height: 300px;
   border-radius: 25px 25px 0 0;
-}
+  }
 
 .section__palette__lien__carte__nouveau, .section__note__lien__carte__nouveau {
   position: absolute;
@@ -300,7 +308,7 @@
   border-radius: 5px;
   font-size: 20px;
   font-weight:800;
-}
+  }
 
 .section__palette__lien__carte__intitule__titre, .section__note__lien__carte__intitule__titre, .section__french__lien__carte__intitule__titre, .section__delice__lien__carte__intitule__titre {
   text-decoration: none;
@@ -308,13 +316,13 @@
   font-weight: 600;
   color: black;
   margin: 20px 0 0 20px;
-}
+  }
 
 .section__palette__lien__carte__intitule__lieu, .section__note__lien__carte__intitule__lieu, .section__french__lien__carte__intitule__lieu, .section__delice__lien__carte__intitule__lieu {
   font-size: 24px;
   margin: 10px 0 16px 20px;
   color:black;
-}
+  }
 
 .coeur {
   position: absolute;
@@ -323,7 +331,7 @@
   font-size: 40px!important;
   font-weight: 300;
   transition: all 0.5s ease-in-out;
- }
+  }
 
 .coeur:hover{
 
@@ -335,41 +343,40 @@
     color: transparent;
     transition-duration: 1s;
     transition-timing-function: ease-in;
+    }
   }
-}
 
 .footer {
   background-color: #3d3434;
   padding: 20px 0 30px 20px;
   color: white;
-}
+  }
 
 .footer__logo{
   margin:20px 0 20px 10px;
-}
+  }
 
 .footer .footer__logo__img {
   height: 25px;
   -webkit-filter: invert(1);
           filter: invert(1);
-}
+  }
 
 .footer__proposer, .footer__devenir, .footer__mentions, .footer__contact {
   margin: 10px;
-}
+  }
 
 a[href="mailto@ohmyfood.com"]{
   text-decoration:none;
   color:white;
-}
+  }
 
 .fa-utensils {
   padding-right: 10px;
-}
+  }
 
 .fa-hands-helping {
   -webkit-transform: rotate(345deg);
           transform: rotate(345deg);
   font-size: 15px;
-}
-/*# sourceMappingURL=style.css.map */
+  }
